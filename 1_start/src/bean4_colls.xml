@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+<bean name="collections" class="bean.Collections">
+    <property name="stu">
+        <array>
+            <value>张三</value>
+            <value>李四</value>
+            <value>王五</value>
+        </array>
+    </property>
+
+    <property name="list">
+        <list>
+            <value>list1</value>
+            <value>list2</value>
+            <value>1918</value>
+        </list>
+    </property>
+
+    <property name="map">
+        <map>
+            <entry key="k1" value="v1"></entry>
+            <entry key="k2" value="v2"></entry>
+            <entry key="k3" value="v3"></entry>
+        </map>
+    </property>
+
+    <property name="set">
+        <set>
+            <value>set1</value>
+            <value>set2</value>
+            <value>set3</value>
+        </set>
+    </property>
+
+</bean>
+</beans>
