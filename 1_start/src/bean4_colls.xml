@@ -2,7 +2,9 @@
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xmlns:p="http://www.springframework.org/schema/p"
-       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+       xmlns:util="http://www.springframework.org/schema/util"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+                            http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd">
 <bean name="collections" class="bean.Collections">
     <property name="stu">
         <array>
@@ -36,5 +38,20 @@
         </set>
     </property>
 
+    <property name="personList" ref="pList">
+      <!--  <list>
+            <ref bean="person1"></ref>
+            <ref bean="person2"></ref>
+            <ref bean="person3"></ref>
+        </list>-->
+    </property>
+
 </bean>
+
+<!--在 spring 配置文件中引入名称空间 util 抽取-->
+<util:list id="pList">
+    <bean class="bean._1_base.Person" name="person1" p:name="p1" p:age="8"></bean>
+    <bean class="bean._1_base.Person" name="person2" p:name="p2" p:age="18"></bean>
+    <bean class="bean._1_base.Person" name="person3" p:name="p3" p:age="28"></bean>
+</util:list>
 </beans>

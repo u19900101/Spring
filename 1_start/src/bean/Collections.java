@@ -1,5 +1,6 @@
 package bean;
 
+import bean._1_base.Person;
 import org.junit.Test;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
@@ -20,6 +21,12 @@ public class Collections {
     private Map<String,String> map;
     private Set set;
 
+    public void setPersonList(List<Person> personList) {
+        this.personList = personList;
+    }
+
+    private List<Person> personList;
+
     public void setStu(String[] stu) {
         this.stu = stu;
     }
@@ -36,18 +43,21 @@ public class Collections {
         this.set = set;
     }
 
+    @Override
+    public String toString() {
+        return "Collections{" +
+                "stu=" + Arrays.toString(stu) +
+                ",\n list=" + list +
+                ",\n map=" + map +
+                ",\n set=" + set +
+                ", \n personList=" + personList +
+                '}';
+    }
+
     @Test
     public void T(){
         ApplicationContext context = new ClassPathXmlApplicationContext("bean4_colls.xml");
         Collections collections = context.getBean("collections", Collections.class);
-        List list = collections.list;
-        Map<String, String> map = collections.map;
-        String[] stu = collections.stu;
-        Set set = collections.set;
-
-        System.out.println(Arrays.asList(stu));
-        System.out.println(list);
-        System.out.println(map);
-        System.out.println(set);
+        System.out.println(collections);
     }
 }
