@@ -1,3 +1,5 @@
+package bean;
+
 /**
  * @author lppppp
  * @create 2021-01-12 19:19
@@ -8,7 +10,7 @@ public class Person {
 
     @Override
     public String toString() {
-        return "Person{" +
+        return "bean.Person{" +
                 "name='" + name + '\'' +
                 ", age=" + age +
                 '}';
@@ -32,6 +34,6 @@ public class Person {
     }
 
     public void init(){
-        System.out.println("come into Person init ...");
+        System.out.println("come into bean.Person init ...");
     }
 }

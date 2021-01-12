@@ -1,3 +1,5 @@
+package bean;
+
 import org.junit.Test;
 import org.springframework.beans.factory.BeanFactory;
 import org.springframework.context.ApplicationContext;
@@ -35,7 +37,6 @@ public class TestSpring5 {
 
     @Test
     public void T3(){
-
         ApplicationContext context = new ClassPathXmlApplicationContext("bean1.xml");
         Object person = context.getBean("person");
         System.out.println(person);

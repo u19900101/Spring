@@ -5,13 +5,16 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
     <!--默认调用了无参构造器-->
-<bean id="user" class="User"></bean>
+<bean id="user" class="bean.User"></bean>
 
     <!--演示属性注入-->
-<bean id="person" class="Person" p:age="20" p:name="p:静静">
+<bean id="person" class="bean.Person">
     <!--构造器注入属性 早于 set方法  ，最后的结果为set 方法的注入-->
      <!--1.set方法 注入属性-->
-    <property name="name" value="静静"></property>
+    <!--<property name="name" value="静静"></property>-->
+    <property name="name">
+        <value><![CDATA[<<特殊符号的注入>>]]></value>
+    </property>
     <property name="age" value="18"></property>
 
     <!--2.构造器注入属性-->
@@ -19,5 +22,5 @@
     <constructor-arg name="age" value="19"></constructor-arg>
 </bean>
     <!--3.p标签注入-->
-    <!--<bean id="person" class="Person" p:age="20" p:name="p:静静"></bean>-->
+    <!--<bean id="person" class="bean.Person" p:age="20" p:name="p:静静"></bean>-->
 </beans>
