@@ -28,6 +28,10 @@ public class Emp {
         this.person = person;
     }
 
+    public Person getPerson() {
+        return person;
+    }
+
     @Test
     public void T(){
         ApplicationContext context = new ClassPathXmlApplicationContext("bean3_inner.xml");

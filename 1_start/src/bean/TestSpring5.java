@@ -13,15 +13,15 @@ public class TestSpring5 {
     @Test
     public void T(){
         /* 懒加载 */
-        BeanFactory context = new ClassPathXmlApplicationContext("bean1.xml");
+        BeanFactory context = new ClassPathXmlApplicationContext("bean1_base.xml");
         /* 饿汉式加载 */
-        // ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("bean1.xml");
+        // ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("bean1_base.xml");
         User user = context.getBean("user",User.class);
         user.init();
     }
 
     public <T>T beanFac(String className){
-        ApplicationContext context = new ClassPathXmlApplicationContext("bean1.xml");
+        ApplicationContext context = new ClassPathXmlApplicationContext("bean1_base.xml");
         T t = (T)context.getBean(className);
         return t;
     }
@@ -37,7 +37,7 @@ public class TestSpring5 {
 
     @Test
     public void T3(){
-        ApplicationContext context = new ClassPathXmlApplicationContext("bean1.xml");
+        ApplicationContext context = new ClassPathXmlApplicationContext("bean1_base.xml");
         Object person = context.getBean("person");
         System.out.println(person);
     }
