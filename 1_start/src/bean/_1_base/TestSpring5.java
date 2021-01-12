@@ -1,4 +1,4 @@
-package bean;
+package bean._1_base;
 
 import org.junit.Test;
 import org.springframework.beans.factory.BeanFactory;

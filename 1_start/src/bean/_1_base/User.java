@@ -1,4 +1,4 @@
-package bean;
+package bean._1_base;
 
 /**
  * @author lppppp
@@ -6,6 +6,6 @@ package bean;
  */
 public class User {
     public void init(){
-        System.out.println("come into bean.User init ...");
+        System.out.println("come into bean._1_base.User init ...");
     }
 }

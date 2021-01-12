@@ -1,4 +1,4 @@
-package bean;
+package bean._1_base;
 
 /**
  * @author lppppp
@@ -10,7 +10,7 @@ public class Person {
 
     @Override
     public String toString() {
-        return "bean.Person{" +
+        return "bean._1_base.Person{" +
                 "name='" + name + '\'' +
                 ", age=" + age +
                 '}';
@@ -34,6 +34,6 @@ public class Person {
     }
 
     public void init(){
-        System.out.println("come into bean.Person init ...");
+        System.out.println("come into bean._1_base.Person init ...");
     }
 }
