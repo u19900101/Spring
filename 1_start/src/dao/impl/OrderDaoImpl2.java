@@ -1,6 +1,7 @@
 package dao.impl;
 
 import dao.OrderDao;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Repository;
 
 /**
@@ -9,8 +10,10 @@ import org.springframework.stereotype.Repository;
  */
 @Repository
 public class OrderDaoImpl2 implements OrderDao {
+    @Value("name....")
+    private String name;
     @Override
     public void addOrder() {
-        System.out.println("OrderDaoImpl2 ....");
+        System.out.println("OrderDaoImpl2 ...."+name);
     }
 }
