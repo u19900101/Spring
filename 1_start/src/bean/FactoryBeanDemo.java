@@ -30,7 +30,7 @@ public class FactoryBeanDemo implements FactoryBean<Person> {
 
     @Test
     public void T(){
-        ApplicationContext context = new ClassPathXmlApplicationContext("bean4_factory.xml");
+        ApplicationContext context = new ClassPathXmlApplicationContext("bean5_factory.xml");
         Person factoryBeanDemo = context.getBean("factoryBeanDemo", Person.class);
         System.out.println(factoryBeanDemo);
     }

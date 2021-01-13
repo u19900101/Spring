@@ -18,6 +18,7 @@ public class Person {
 
     public void setName(String name) {
         this.name = name;
+        System.out.println("person set ...");
     }
 
     public void setAge(Integer age) {
@@ -25,7 +26,7 @@ public class Person {
     }
 
     public Person() {
-        // System.out.println("come into person Constructor() ...");
+        System.out.println("come into person Constructor() ...");
     }
 
     public Person(String name, Integer age) {
