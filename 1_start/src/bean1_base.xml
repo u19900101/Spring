@@ -5,7 +5,7 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
     <!--默认调用了无参构造器-->
-<bean id="user" class="bean._1_base.User"></bean>
+<bean id="user" class="bean._1_base.User" scope="prototype"></bean>
 
     <!--演示属性注入-->
 <bean id="person" class="bean._1_base.Person">
