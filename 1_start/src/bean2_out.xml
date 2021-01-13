@@ -6,6 +6,6 @@
 <bean name="userService" class="service.UserService">
     <property name="userDao" ref="UserDaoImpl"></property>
 </bean>
-<bean name="UserDaoImpl" class="dao.UserDaoImpl"></bean>
+<bean name="UserDaoImpl" class="dao.impl.UserDaoImpl"></bean>
 
 </beans>

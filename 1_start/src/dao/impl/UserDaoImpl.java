@@ -1,4 +1,6 @@
-package dao;
+package dao.impl;
+
+import dao.UserDao;
 
 /**
  * @author lppppp
