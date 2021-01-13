@@ -6,7 +6,7 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
                            http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
    <!--配置数据库-->
-    <!--1.引入上下文标签-->
+   <!--1.引入上下文标签-->
    <context:property-placeholder location="druid.properties"></context:property-placeholder>
    <!--2.从properties中注入配置信息-->
    <bean name="dataSource" class="com.alibaba.druid.pool.DruidDataSource">
