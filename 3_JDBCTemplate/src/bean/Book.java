@@ -9,10 +9,10 @@ import org.springframework.stereotype.Repository;
  */
 @Repository
 public class Book {
-    @Value("java2 编程思想")
+    @Value("1-java2 编程思想")
     private String bname;
-    @Value("bookID——2")
-    private String bid;
+    @Value("1")
+    private int bid;
     @Value("2")
     private String bstatu;
     @Override
@@ -32,11 +32,11 @@ public class Book {
         this.bname = bname;
     }
 
-    public String getBid() {
+    public int getBid() {
         return bid;
     }
 
-    public void setBid(String bid) {
+    public void setBid(int bid) {
         this.bid = bid;
     }
 
@@ -51,7 +51,7 @@ public class Book {
     public Book() {
     }
 
-    public Book(String bname, String bid, String bstatu) {
+    public Book(String bname, int bid, String bstatu) {
         this.bname = bname;
         this.bid = bid;
         this.bstatu = bstatu;

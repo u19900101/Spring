@@ -9,4 +9,8 @@ import bean.Book;
 public interface BookDao {
     int addBook(Book book);
     int addBook();
+
+    int bookUpdate(Book book);
+
+    int bookDelete(int id);
 }
