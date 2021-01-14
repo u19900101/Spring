@@ -8,8 +8,8 @@ import org.springframework.stereotype.Component;
  * @author lppppp
  * @create 2021-01-14 19:58
  */
-@Component
-@Aspect
+// @Component
+// @Aspect
 public class UserServiceProxy {
 
     @Before(value = "execution(* ppppp.service.UserService.doBussiness(..))")

@@ -1,5 +1,6 @@
 package ppppp.service;
 
+import org.aspectj.lang.annotation.Aspect;
 import org.aspectj.lang.annotation.Before;
 import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -16,9 +17,8 @@ import ppppp.dao.UserDao;
  * @create 2021-01-14 19:31
  */
 @Service
-@Transactional(propagation = Propagation.REQUIRED,
-        isolation = Isolation.REPEATABLE_READ
-)
+@Aspect
+// @Transactional(propagation = Propagation.REQUIRED,isolation = Isolation.REPEATABLE_READ)
 public class UserService {
     @Autowired
     private UserDao userDao;
@@ -30,8 +30,15 @@ public class UserService {
     }
 
     @Test
-    public void T(){
+    public void T_annotation(){
         ApplicationContext context = new ClassPathXmlApplicationContext("bean.xml");
+        UserService userService = context.getBean("userService", UserService.class);
+        userService.doBussiness();
+    }
+
+    @Test
+    public void T_xml(){
+        ApplicationContext context = new ClassPathXmlApplicationContext("bean_base_xml.xml");
         UserService userService = context.getBean("userService", UserService.class);
         userService.doBussiness();
     }
