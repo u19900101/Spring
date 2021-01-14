@@ -4,7 +4,9 @@ import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.*;
 import org.junit.Test;
 import org.springframework.context.ApplicationContext;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
+import org.springframework.core.annotation.Order;
 import org.springframework.stereotype.Component;
 
 /**
@@ -13,6 +15,7 @@ import org.springframework.stereotype.Component;
  */
 @Component
 @Aspect
+@Order(2)
 public class UserDaoProxy {
     //相同切入点的抽取
     @Pointcut(value = "execution(* anno.UserDao.add(..))")
@@ -22,7 +25,7 @@ public class UserDaoProxy {
     // @Before(value = "execution(* anno.*.*(..))")// 要一一对应，不可跨层
     @Before(value = "point()")
     public void before(){
-        System.out.println("before .....");
+        System.out.println("UserDaoProxy before .....");
     }
 
     // 最终通知 相当于finally，不管有无异常均会执行
@@ -50,6 +53,14 @@ public class UserDaoProxy {
     @Test
     public void T(){
         ApplicationContext context = new ClassPathXmlApplicationContext("bean.xml");
+        UserDao userDao = context.getBean("userDao", UserDao.class);
+        userDao.add();
+    }
+
+    // 完全注解开发
+    @Test
+    public void T2(){
+        ApplicationContext context = new AnnotationConfigApplicationContext(ConfigAOP.class);
         UserDao userDao = context.getBean("userDao", UserDao.class);
         userDao.add();
     }
