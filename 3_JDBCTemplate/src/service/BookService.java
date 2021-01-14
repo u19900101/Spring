@@ -36,6 +36,15 @@ public class BookService {
         int i = bookDao.bookDelete(id);
         return i;
     }
+    public int getCount(){
+        int i = bookDao.getCount();
+        return i;
+    }
+
+    public Book getBookById(int id){
+        return bookDao.getBookById(id);
+    }
+
 
     @Test
     public void T(){
@@ -48,12 +57,27 @@ public class BookService {
     }
 
     @Test
-    public void T2(){
+    public void T2_update(){
         ApplicationContext context = new ClassPathXmlApplicationContext("bean.xml");
         BookService bookService = context.getBean("bookService", BookService.class);
         int i = bookService.bookUpdate(new Book("修改_Java编程思想", 1, "x_1"));
         System.out.println(i);
         int j = bookService.bookDelete(2);
         System.out.println(j);
+    }
+
+    @Test
+    public void T3_count(){
+        ApplicationContext context = new ClassPathXmlApplicationContext("bean.xml");
+        BookService bookService = context.getBean("bookService", BookService.class);
+        int count = bookService.getCount();
+        System.out.println(count);
+    }
+    @Test
+    public void T3_getBookById(){
+        ApplicationContext context = new ClassPathXmlApplicationContext("bean.xml");
+        BookService bookService = context.getBean("bookService", BookService.class);
+        Book b = bookService.getBookById(2);
+        System.out.println(b);
     }
 }

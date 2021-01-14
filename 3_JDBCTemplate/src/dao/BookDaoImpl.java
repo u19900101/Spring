@@ -2,6 +2,7 @@ package dao;
 
 import bean.Book;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.jdbc.core.BeanPropertyRowMapper;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Repository;
 
@@ -46,5 +47,19 @@ public class BookDaoImpl implements BookDao {
         String sql = "delete from j_book where bid=?";
         int update = jdbcTemplate.update(sql, id);
         return update;
+    }
+
+    @Override
+    public int getCount() {
+        String sql = "select count(*) from j_book";
+        int count = jdbcTemplate.queryForObject(sql,Integer.class);
+        return count;
+    }
+
+    @Override
+    public Book getBookById(int id) {
+        String sql = "select * from j_book where bid=?";
+        Book book = jdbcTemplate.queryForObject(sql,new BeanPropertyRowMapper<>(Book.class),id);
+        return book;
     }
 }

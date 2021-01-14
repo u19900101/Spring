@@ -13,4 +13,8 @@ public interface BookDao {
     int bookUpdate(Book book);
 
     int bookDelete(int id);
+
+    int getCount();
+
+    Book getBookById(int id);
 }
