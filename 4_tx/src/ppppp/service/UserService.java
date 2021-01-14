@@ -6,6 +6,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Isolation;
+import org.springframework.transaction.annotation.Propagation;
 import org.springframework.transaction.annotation.Transactional;
 import ppppp.dao.UserDao;
 
@@ -14,7 +16,9 @@ import ppppp.dao.UserDao;
  * @create 2021-01-14 19:31
  */
 @Service
-@Transactional
+@Transactional(propagation = Propagation.REQUIRED,
+        isolation = Isolation.REPEATABLE_READ
+)
 public class UserService {
     @Autowired
     private UserDao userDao;
