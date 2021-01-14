@@ -21,4 +21,8 @@ public interface BookDao {
     Book getBookById(int id);
 
     List<Book> getBookList();
+
+    void addBookBatch(List<Object[]> batchArgs);
+
+    void deleteBookBatch(List<Object[]> batchArgs);
 }

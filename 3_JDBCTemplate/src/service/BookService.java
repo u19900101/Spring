@@ -11,6 +11,9 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 import org.springframework.stereotype.Service;
 
+import java.lang.reflect.Array;
+import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 /**
@@ -51,8 +54,27 @@ public class BookService {
         return bookDao.getBookList();
     }
 
+    public void addBookBatch(List<Object[]> batchArgs){
+        bookDao.addBookBatch(batchArgs);
+    }
+
+    public void deleteBookBatch(List<Object[]> batchArgs){
+        bookDao.deleteBookBatch(batchArgs);
+    }
+
     @Test
-    public void T(){
+    public void T5_batchDelete(){
+        ApplicationContext context = new ClassPathXmlApplicationContext("bean.xml");
+        BookService bookService = context.getBean("bookService", BookService.class);
+        List<Object[]> batchArgs = new ArrayList<>();
+        batchArgs.add(new Object[]{1});
+        batchArgs.add(new Object[]{2});
+        batchArgs.add(new Object[]{3});
+        bookService.deleteBookBatch(batchArgs);
+    }
+
+    @Test
+    public void T_add(){
         ApplicationContext context = new ClassPathXmlApplicationContext("bean.xml");
         BookService bookService = context.getBean("bookService", BookService.class);
         int i = bookService.bookAdd(new Book("2-Java编程思想", 2, "1"));
@@ -91,5 +113,15 @@ public class BookService {
         BookService bookService = context.getBean("bookService", BookService.class);
         List<Book> bookList = bookService.getBookList();
         bookList.forEach(System.out::println);
+    }
+    @Test
+    public void T5_batchAdd(){
+        ApplicationContext context = new ClassPathXmlApplicationContext("bean.xml");
+        BookService bookService = context.getBean("bookService", BookService.class);
+        List<Object[]> batchArgs = new ArrayList<>();
+        batchArgs.add(new Object[]{"java4", "s4"});
+        batchArgs.add(new Object[]{"java5", "s5"});
+        batchArgs.add(new Object[]{"java6", "s6"});
+        bookService.addBookBatch(batchArgs);
     }
 }
