@@ -5,11 +5,13 @@ import org.aspectj.lang.annotation.Before;
 import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationContext;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Isolation;
 import org.springframework.transaction.annotation.Propagation;
 import org.springframework.transaction.annotation.Transactional;
+import ppppp.config.TxConfig;
 import ppppp.dao.UserDao;
 
 /**
@@ -17,7 +19,7 @@ import ppppp.dao.UserDao;
  * @create 2021-01-14 19:31
  */
 @Service
-@Aspect
+@Transactional
 // @Transactional(propagation = Propagation.REQUIRED,isolation = Isolation.REPEATABLE_READ)
 public class UserService {
     @Autowired
@@ -39,6 +41,13 @@ public class UserService {
     @Test
     public void T_xml(){
         ApplicationContext context = new ClassPathXmlApplicationContext("bean_base_xml.xml");
+        UserService userService = context.getBean("userService", UserService.class);
+        userService.doBussiness();
+    }
+
+    @Test
+    public void T_allconfig(){
+        ApplicationContext context = new AnnotationConfigApplicationContext(TxConfig.class);
         UserService userService = context.getBean("userService", UserService.class);
         userService.doBussiness();
     }

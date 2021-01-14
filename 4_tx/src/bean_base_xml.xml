@@ -39,7 +39,9 @@
     <!--1.配置通知-->
     <tx:advice id = "txadvice">
         <tx:attributes>
+            <!--指定哪种规则的方法上面添加事务-->
             <tx:method name="doBussiness" propagation="REQUIRED"/>
+            <!--<tx:method name="account*"/>-->
         </tx:attributes>
     </tx:advice>
 
@@ -47,6 +49,7 @@
     <aop:config>
         <!--配置切入点-->
         <aop:pointcut id="pcut" expression="execution(* ppppp.service.UserService.*(..))"/>
+        <!--配置切面-->
         <aop:advisor advice-ref="txadvice" pointcut-ref="pcut"/>
     </aop:config>
 </beans>
