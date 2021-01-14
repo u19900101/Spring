@@ -6,6 +6,8 @@ import org.springframework.jdbc.core.BeanPropertyRowMapper;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Repository;
 
+import java.util.List;
+
 /**
  * @author lppppp
  * @create 2021-01-14 10:54
@@ -61,5 +63,12 @@ public class BookDaoImpl implements BookDao {
         String sql = "select * from j_book where bid=?";
         Book book = jdbcTemplate.queryForObject(sql,new BeanPropertyRowMapper<>(Book.class),id);
         return book;
+    }
+
+    @Override
+    public List<Book> getBookList() {
+        String sql = "select * from j_book";
+        List<Book> bookList = jdbcTemplate.query(sql, new BeanPropertyRowMapper<>(Book.class));
+        return bookList;
     }
 }

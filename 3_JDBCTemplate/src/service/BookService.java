@@ -11,6 +11,8 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 /**
  * @author lppppp
  * @create 2021-01-14 10:54
@@ -45,6 +47,9 @@ public class BookService {
         return bookDao.getBookById(id);
     }
 
+    public List<Book> getBookList(){
+        return bookDao.getBookList();
+    }
 
     @Test
     public void T(){
@@ -79,5 +84,12 @@ public class BookService {
         BookService bookService = context.getBean("bookService", BookService.class);
         Book b = bookService.getBookById(2);
         System.out.println(b);
+    }
+    @Test
+    public void T4_getBookList(){
+        ApplicationContext context = new ClassPathXmlApplicationContext("bean.xml");
+        BookService bookService = context.getBean("bookService", BookService.class);
+        List<Book> bookList = bookService.getBookList();
+        bookList.forEach(System.out::println);
     }
 }

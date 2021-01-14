@@ -2,6 +2,8 @@ package dao;
 
 import bean.Book;
 
+import java.util.List;
+
 /**
  * @author lppppp
  * @create 2021-01-14 10:53
@@ -17,4 +19,6 @@ public interface BookDao {
     int getCount();
 
     Book getBookById(int id);
+
+    List<Book> getBookList();
 }
