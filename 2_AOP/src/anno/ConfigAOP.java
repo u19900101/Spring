@@ -11,6 +11,8 @@ import org.springframework.context.annotation.EnableAspectJAutoProxy;
  */
 @Configuration
 @ComponentScan(basePackages = "anno")
+//貌似写成 true 和 false 无区别
 @EnableAspectJAutoProxy(proxyTargetClass = true)
+// @EnableAspectJAutoProxy
 public class ConfigAOP {
 }
