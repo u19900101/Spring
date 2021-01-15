@@ -7,6 +7,7 @@
       <module fileurl="file://$PROJECT_DIR$/3_JDBCTemplate/3_JDBCTemplate.iml" filepath="$PROJECT_DIR$/3_JDBCTemplate/3_JDBCTemplate.iml" />
       <module fileurl="file://$PROJECT_DIR$/4_tx/4_tx.iml" filepath="$PROJECT_DIR$/4_tx/4_tx.iml" />
       <module fileurl="file://$PROJECT_DIR$/5_Spring.iml" filepath="$PROJECT_DIR$/5_Spring.iml" />
+      <module fileurl="file://$PROJECT_DIR$/5_newFeature/5_newFeature.iml" filepath="$PROJECT_DIR$/5_newFeature/5_newFeature.iml" />
     </modules>
   </component>
 </project>
