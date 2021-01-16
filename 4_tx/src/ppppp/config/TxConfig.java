@@ -28,6 +28,7 @@ import java.util.Set;
 @Configuration
 @ComponentScan(basePackages = {"ppppp"})
 @EnableTransactionManagement    //开启事务
+
 public class TxConfig {
     //创建数据库连接池
     @Bean
