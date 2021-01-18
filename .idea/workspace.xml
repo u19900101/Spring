@@ -154,7 +154,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="add_unversioned_files" value="$PROJECT_DIR$/.gitignore" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1610957777659" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1610957842845" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../6_Maven_Git" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -164,19 +164,19 @@
     <property name="two.files.diff.last.used.file" value="$PROJECT_DIR$/2_AOP/src/xml/Test.java" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\MyJava\5_Spring\1_start" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="anno" />
-      <recent name="dao.impl" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\MyJava\5_Spring\3_JDBCTemplate\lib" />
       <recent name="D:\MyJava\5_Spring\5_newFeature\lib" />
       <recent name="D:\MyJava\5_Spring\5_newFeature\src" />
       <recent name="D:\MyJava\5_Spring\4_tx\src\ppppp\config" />
       <recent name="D:\MyJava\5_Spring\4_tx\src" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="anno" />
+      <recent name="dao.impl" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\MyJava\5_Spring\1_start" />
     </key>
   </component>
   <component name="RunDashboard">
