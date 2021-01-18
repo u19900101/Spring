@@ -1,0 +1,1229 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="3b8fdc07-23ae-42c9-9495-7c0eec64329e" name="Default Changelist" comment="" />
+    <list id="bedb1a8b-f792-4210-83b7-eaaae81d2aa4" name="Revert &quot;bean的复杂属性注入，外部注入和内部注入&quot;" comment="Revert &quot;bean的复杂属性注入，外部注入和内部注入&quot;&#10;&#10;This reverts commit d4b4ea22" />
+    <ignored path="$PROJECT_DIR$/out/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="spring-beans.schema" />
+        <option value="FxmlFile" />
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/1_start/src/bean6_life.xml" />
+        <option value="$PROJECT_DIR$/1_start/src/bean7_autowire.xml" />
+        <option value="$PROJECT_DIR$/1_start/src/bean/AutoWire.java" />
+        <option value="$PROJECT_DIR$/1_start/src/bean3_inner.xml" />
+        <option value="$PROJECT_DIR$/1_start/src/jdbc.properties" />
+        <option value="$PROJECT_DIR$/1_start/src/druid.properties" />
+        <option value="$PROJECT_DIR$/1_start/src/bean/DataSourceDemo.java" />
+        <option value="$PROJECT_DIR$/1_start/src/bean8_jdbc.xml" />
+        <option value="$PROJECT_DIR$/1_start/src/dao/OrderDao.java" />
+        <option value="$PROJECT_DIR$/1_start/src/bean9_annotation.xml" />
+        <option value="$PROJECT_DIR$/1_start/src/dao/impl/OrderDaoImpl.java" />
+        <option value="$PROJECT_DIR$/1_start/src/service/OrderService.java" />
+        <option value="$PROJECT_DIR$/1_start/src/dao/impl/OrderDaoImpl2.java" />
+        <option value="$PROJECT_DIR$/1_start/src/test/Test.java" />
+        <option value="$PROJECT_DIR$/1_start/src/config/SpringConfig.java" />
+        <option value="$PROJECT_DIR$/2_AOP/src/bean/User.java" />
+        <option value="$PROJECT_DIR$/2_AOP/src/dao/UserDao.java" />
+        <option value="$PROJECT_DIR$/2_AOP/src/dao/impl/UserDaoImpl.java" />
+        <option value="$PROJECT_DIR$/2_AOP/src/UserProxy.java" />
+        <option value="$PROJECT_DIR$/2_AOP/src/JDKproxy.java" />
+        <option value="$PROJECT_DIR$/2_AOP/src/UserDaoProxy.java" />
+        <option value="$PROJECT_DIR$/2_AOP/src/anno/UserDao.java" />
+        <option value="$PROJECT_DIR$/2_AOP/src/anno/UserDaoProxy2.java" />
+        <option value="$PROJECT_DIR$/2_AOP/src/xml/Book.java" />
+        <option value="$PROJECT_DIR$/2_AOP/src/anno/Config.java" />
+        <option value="$PROJECT_DIR$/2_AOP/src/anno/UserDaoProxy.java" />
+        <option value="$PROJECT_DIR$/2_AOP/src/bean.xml" />
+        <option value="$PROJECT_DIR$/2_AOP/src/bean_book.xml" />
+        <option value="$PROJECT_DIR$/2_AOP/src/xml/BookProxy.java" />
+        <option value="$PROJECT_DIR$/3_JDBCTemplate/src/Config.java" />
+        <option value="$PROJECT_DIR$/3_JDBCTemplate/src/config/Config.java" />
+        <option value="$PROJECT_DIR$/3_JDBCTemplate/src/bean.xml" />
+        <option value="$PROJECT_DIR$/3_JDBCTemplate/src/bean/Book.java" />
+        <option value="$PROJECT_DIR$/3_JDBCTemplate/src/dao/BookDao.java" />
+        <option value="$PROJECT_DIR$/3_JDBCTemplate/src/dao/BookDaoImpl.java" />
+        <option value="$PROJECT_DIR$/3_JDBCTemplate/src/service/BookService.java" />
+        <option value="$PROJECT_DIR$/4_tx/src/ppppp/dao/UserDao.java" />
+        <option value="$PROJECT_DIR$/4_tx/src/ppppp/dao/UserDaoImpl.java" />
+        <option value="$PROJECT_DIR$/4_tx/src/bean.xml" />
+        <option value="$PROJECT_DIR$/4_tx/src/ppppp/service/UserServiceProxy.java" />
+        <option value="$PROJECT_DIR$/4_tx/src/bean_base_xml.xml" />
+        <option value="$PROJECT_DIR$/2_AOP/src/anno/ConfigAOP.java" />
+        <option value="$PROJECT_DIR$/4_tx/src/ppppp/service/UserService.java" />
+        <option value="$PROJECT_DIR$/4_tx/src/ppppp/config/druid.properties" />
+        <option value="$PROJECT_DIR$/5_newFeature/src/log4j2.xml" />
+        <option value="$PROJECT_DIR$/5_newFeature/src/MyLog.java" />
+        <option value="$PROJECT_DIR$/5_newFeature/src/bean.xml" />
+        <option value="$PROJECT_DIR$/5_newFeature/src/JUnit4.java" />
+        <option value="$PROJECT_DIR$/5_newFeature/src/JUnit5.java" />
+        <option value="$PROJECT_DIR$/4_tx/src/ppppp/config/TxConfig.java" />
+        <option value="$PROJECT_DIR$/README.md" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="localRepository" value="D:\LocalRepository" />
+        <option name="mavenHome" value="D:/Javainstall/apache-maven-3.6.3" />
+        <option name="userSettingsFile" value="D:\Javainstall\apache-maven-3.6.3\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="595" />
+    <option name="y" value="35" />
+    <option name="width" value="1750" />
+    <option name="height" value="1030" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <flattenPackages ProjectPane="false" />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="PackagesPane" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="5_Spring" type="b2602c69:ProjectViewProjectNode" />
+              <item name="5_Spring" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
+    <property name="TODO_SCOPE" value="All Places" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1610803030594" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../6_Maven_Git" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+    <property name="two.files.diff.last.used.file" value="$PROJECT_DIR$/2_AOP/src/xml/Test.java" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\MyJava\5_Spring\1_start" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="anno" />
+      <recent name="dao.impl" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\MyJava\5_Spring\3_JDBCTemplate\lib" />
+      <recent name="D:\MyJava\5_Spring\5_newFeature\lib" />
+      <recent name="D:\MyJava\5_Spring\5_newFeature\src" />
+      <recent name="D:\MyJava\5_Spring\4_tx\src\ppppp\config" />
+      <recent name="D:\MyJava\5_Spring\4_tx\src" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="JUnit.JUnit5.T_new">
+    <configuration name="JUnit4.T_new" type="AndroidJUnit" temporary="true" nameIsGenerated="true">
+      <module name="5_newFeature" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="JUnit4" />
+      <option name="METHOD_NAME" value="T_new" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="JUnit4.T_orgin" type="AndroidJUnit" temporary="true" nameIsGenerated="true">
+      <module name="5_newFeature" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="JUnit4" />
+      <option name="METHOD_NAME" value="T_orgin" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MyLog (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="MyLog" />
+      <module name="5_newFeature" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="JUnit5.T_new" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="5_newFeature" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="JUnit5" />
+      <option name="METHOD_NAME" value="T_new" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MyLog.testGenericApplicationContext" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="5_newFeature" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="MyLog" />
+      <option name="METHOD_NAME" value="testGenericApplicationContext" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Android JUnit.JUnit4.T_orgin" />
+      <item itemvalue="Android JUnit.JUnit4.T_new" />
+      <item itemvalue="Application.MyLog (2)" />
+      <item itemvalue="JUnit.MyLog.testGenericApplicationContext" />
+      <item itemvalue="JUnit.JUnit5.T_new" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.JUnit5.T_new" />
+        <item itemvalue="Android JUnit.JUnit4.T_new" />
+        <item itemvalue="Android JUnit.JUnit4.T_orgin" />
+        <item itemvalue="JUnit.MyLog.testGenericApplicationContext" />
+        <item itemvalue="Application.MyLog (2)" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="3b8fdc07-23ae-42c9-9495-7c0eec64329e" name="Default Changelist" comment="" />
+      <created>1610441505324</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1610441505324</updated>
+      <workItem from="1610441517785" duration="16220000" />
+      <workItem from="1610496321660" duration="7168000" />
+      <workItem from="1610503598874" duration="18134000" />
+      <workItem from="1610584606603" duration="30282000" />
+      <workItem from="1610669343073" duration="14990000" />
+      <workItem from="1610759269830" duration="3097000" />
+    </task>
+    <task id="LOCAL-00001" summary="属性注入的3种方式">
+      <created>1610454723808</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1610454723808</updated>
+    </task>
+    <task id="LOCAL-00002" summary="bean的复杂属性注入，外部注入和内部注入">
+      <created>1610460963743</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1610460963743</updated>
+    </task>
+    <task id="LOCAL-00003" summary="bean的复杂属性注入，外部注入和内部注入">
+      <created>1610462345811</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1610462345811</updated>
+    </task>
+    <task id="LOCAL-00004" summary="bean的复杂属性注入，外部注入和内部注入">
+      <created>1610464017460</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1610464017460</updated>
+    </task>
+    <task id="LOCAL-00005" summary="集合类的注入">
+      <created>1610464803486</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1610464803486</updated>
+    </task>
+    <task id="LOCAL-00006" summary="配置文件中引入名称空间 util 抽取">
+      <created>1610466908786</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1610466908786</updated>
+    </task>
+    <task id="LOCAL-00007" summary="FactoryBeanDemo 可以使返回的类与定义的类不一致">
+      <created>1610497378053</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1610497378053</updated>
+    </task>
+    <task id="LOCAL-00008" summary="设置scope的值为singleton、prototype 单例模式或多例模式">
+      <created>1610499126074</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1610499126074</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Bean的生命周期">
+      <created>1610503541653</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1610503541653</updated>
+    </task>
+    <task id="LOCAL-00010" summary="xml 自动注入 ByName ByType">
+      <created>1610504764083</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1610504764083</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Bean 引用外部属性文件 连接数据库">
+      <created>1610507698471</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1610507698471</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Bean 引用外部属性文件 连接数据库">
+      <created>1610519081220</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1610519081220</updated>
+    </task>
+    <task id="LOCAL-00013" summary="使用注解注入">
+      <created>1610519664377</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1610519664377</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Autowired &amp; Qualifier 实现属性注入">
+      <created>1610522874916</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1610522874916</updated>
+    </task>
+    <task id="LOCAL-00015" summary="@Resource 实现属性注入">
+      <created>1610523497964</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1610523497964</updated>
+    </task>
+    <task id="LOCAL-00016" summary="@Configuration 纯注解开发">
+      <created>1610524487265</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1610524487265</updated>
+    </task>
+    <task id="LOCAL-00017" summary="修改名称">
+      <created>1610547381933</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1610547381934</updated>
+    </task>
+    <task id="LOCAL-00018" summary="AOP 动态代理的实现原理">
+      <created>1610547411510</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1610547411510</updated>
+    </task>
+    <task id="LOCAL-00019" summary="AspectJ 动态代理">
+      <created>1610551792772</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1610551792772</updated>
+    </task>
+    <task id="LOCAL-00020" summary="相同切入点的抽取">
+      <created>1610586000963</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1610586000963</updated>
+    </task>
+    <task id="LOCAL-00021" summary="完全注解开发">
+      <created>1610589426082</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1610589426082</updated>
+    </task>
+    <task id="LOCAL-00022" summary="基于xml的AOP">
+      <created>1610589970752</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1610589970752</updated>
+    </task>
+    <task id="LOCAL-00023" summary="@EnableAspectJAutoProxy(proxyTargetClass = true)或false无区别">
+      <created>1610591575951</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1610591575951</updated>
+    </task>
+    <task id="LOCAL-00024" summary="JDBCTemplate init">
+      <created>1610591927224</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1610591927224</updated>
+    </task>
+    <task id="LOCAL-00025" summary="JDBCTemplate 对数据库添加">
+      <created>1610607402962</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1610607402962</updated>
+    </task>
+    <task id="LOCAL-00026" summary="JDBCTemplate 对数据库 修改和删除">
+      <created>1610610303966</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1610610303966</updated>
+    </task>
+    <task id="LOCAL-00027" summary="JDBCTemplate 对数据库 修改和删除">
+      <created>1610611274120</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1610611274120</updated>
+    </task>
+    <task id="LOCAL-00028" summary="JDBCTemplate 查询单个Object">
+      <created>1610611999196</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1610611999196</updated>
+    </task>
+    <task id="LOCAL-00029" summary="JDBCTemplate 查询list">
+      <created>1610612535695</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1610612535695</updated>
+    </task>
+    <task id="LOCAL-00030" summary="JDBCTemplate 批量操作">
+      <created>1610614759771</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1610614759771</updated>
+    </task>
+    <task id="LOCAL-00031" summary="Spring 的事务管理">
+      <created>1610627550837</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1610627550837</updated>
+    </task>
+    <task id="LOCAL-00032" summary="事务的属性设置">
+      <created>1610630777927</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1610630777927</updated>
+    </task>
+    <task id="LOCAL-00033" summary="事务的xml配置">
+      <created>1610633780807</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1610633780807</updated>
+    </task>
+    <task id="LOCAL-00034" summary="全注解的方式进行事务处理">
+      <created>1610638282872</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1610638282872</updated>
+    </task>
+    <task id="LOCAL-00035" summary="spring5的新特性  日志">
+      <created>1610673632525</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1610673632525</updated>
+    </task>
+    <task id="LOCAL-00036" summary="spring5的新特性  整合junit4 简化测试">
+      <created>1610673662736</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1610673662736</updated>
+    </task>
+    <task id="LOCAL-00037" summary="spring5的新特性  整合junit5 简化测试">
+      <created>1610673676389</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1610673676389</updated>
+    </task>
+    <task id="LOCAL-00038" summary="add readme.md">
+      <created>1610760902124</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1610760902124</updated>
+    </task>
+    <option name="localTasksCounter" value="39" />
+    <servers />
+  </component>
+  <component name="TestHistory">
+    <history-entry file="UserService_T_allconfig - 2021.01.14 at 23h 29m 34s.xml">
+      <configuration name="UserService.T_allconfig" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="UserService_T_allconfig - 2021.01.14 at 23h 30m 29s.xml">
+      <configuration name="UserService.T_allconfig" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MyLog_testGenericApplicationContext - 2021.01.15 at 08h 49m 18s.xml">
+      <configuration name="MyLog.testGenericApplicationContext" configurationId="AndroidJUnit" />
+    </history-entry>
+    <history-entry file="MyLog_testGenericApplicationContext - 2021.01.15 at 08h 49m 54s.xml">
+      <configuration name="MyLog.testGenericApplicationContext" configurationId="AndroidJUnit" />
+    </history-entry>
+    <history-entry file="MyLog_testGenericApplicationContext - 2021.01.15 at 08h 51m 15s.xml">
+      <configuration name="MyLog.testGenericApplicationContext" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="JUnit4_T_orgin - 2021.01.15 at 08h 59m 25s.xml">
+      <configuration name="JUnit4.T_orgin" configurationId="AndroidJUnit" />
+    </history-entry>
+    <history-entry file="JUnit4_T_new - 2021.01.15 at 09h 07m 02s.xml">
+      <configuration name="JUnit4.T_new" configurationId="AndroidJUnit" />
+    </history-entry>
+    <history-entry file="JUnit4_T_new - 2021.01.15 at 09h 07m 33s.xml">
+      <configuration name="JUnit4.T_new" configurationId="AndroidJUnit" />
+    </history-entry>
+    <history-entry file="JUnit5_T_new - 2021.01.15 at 09h 18m 52s.xml">
+      <configuration name="JUnit5.T_new" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="JUnit5_T_new - 2021.01.15 at 09h 19m 55s.xml">
+      <configuration name="JUnit5.T_new" configurationId="JUnit" />
+    </history-entry>
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="89891000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-7" y="-7" width="1550" height="878" extended-state="6" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18699732" />
+      <window_info id="Designer" order="1" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Capture Tool" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Favorites" order="5" side_tool="true" />
+      <window_info id="Structure" order="6" weight="0.25" />
+      <window_info anchor="bottom" id="Spring" order="0" />
+      <window_info anchor="bottom" id="Terminal" order="1" weight="0.32963988" />
+      <window_info anchor="bottom" id="Docker" order="2" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="3" side_tool="true" weight="0.32963988" />
+      <window_info anchor="bottom" id="Database Changes" order="4" />
+      <window_info anchor="bottom" id="Messages" order="5" weight="0.5193906" />
+      <window_info anchor="bottom" id="Message" order="6" />
+      <window_info anchor="bottom" id="Find" order="7" weight="0.32963988" />
+      <window_info anchor="bottom" id="Debug" order="8" weight="0.48891968" />
+      <window_info anchor="bottom" id="Cvs" order="9" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="10" weight="0.4" />
+      <window_info anchor="bottom" id="Run" order="11" weight="0.3199446" />
+      <window_info anchor="bottom" id="TODO" order="12" weight="0.32963988" />
+      <window_info anchor="bottom" id="Version Control" order="13" weight="0.71883655" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.49597856" />
+      <window_info anchor="right" id="Maven" order="3" />
+      <window_info anchor="right" id="Palette" order="4" />
+      <window_info anchor="right" id="Capture Analysis" order="5" />
+      <window_info anchor="right" id="Database" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Theme Preview" order="8" />
+    </layout>
+    <layout-to-restore>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14745308" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="Capture Tool" order="4" />
+      <window_info id="UI Designer" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Spring" order="0" />
+      <window_info anchor="bottom" id="Terminal" order="1" weight="0.32963988" />
+      <window_info anchor="bottom" id="Docker" order="2" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="3" side_tool="true" weight="0.32963988" />
+      <window_info anchor="bottom" id="Database Changes" order="4" />
+      <window_info anchor="bottom" id="Messages" order="5" weight="0.5193906" />
+      <window_info anchor="bottom" id="Message" order="6" />
+      <window_info anchor="bottom" id="Find" order="7" weight="0.32963988" />
+      <window_info active="true" anchor="bottom" id="Run" order="8" visible="true" weight="0.34903046" />
+      <window_info anchor="bottom" id="Debug" order="9" weight="0.48891968" />
+      <window_info anchor="bottom" id="Cvs" order="10" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="11" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="12" weight="0.32963988" />
+      <window_info anchor="bottom" id="Version Control" order="13" weight="0.47229916" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.49597856" />
+      <window_info anchor="right" id="Maven" order="3" />
+      <window_info anchor="right" id="Palette" order="4" />
+      <window_info anchor="right" id="Capture Analysis" order="5" />
+      <window_info anchor="right" id="Database" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Theme Preview" order="8" />
+    </layout-to-restore>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ORDER">
+      <list>
+        <option value="0" />
+        <option value="2" />
+        <option value="3" />
+        <option value="1" />
+      </list>
+    </option>
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list />
+          </value>
+        </entry>
+        <entry key="User">
+          <value>
+            <list />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="使用注解注入" />
+    <MESSAGE value="Autowired &amp; Qualifier 实现属性注入" />
+    <MESSAGE value="@Resource 实现属性注入" />
+    <MESSAGE value="@Configuration 纯注解开发" />
+    <MESSAGE value="修改名称" />
+    <MESSAGE value="AOP 动态代理的实现原理" />
+    <MESSAGE value="AspectJ 动态代理" />
+    <MESSAGE value="相同切入点的抽取" />
+    <MESSAGE value="完全注解开发" />
+    <MESSAGE value="基于xml的AOP" />
+    <MESSAGE value="@EnableAspectJAutoProxy(proxyTargetClass = true)或false无区别" />
+    <MESSAGE value="JDBCTemplate init" />
+    <MESSAGE value="JDBCTemplate 对数据库添加" />
+    <MESSAGE value="JDBCTemplate 对数据库 修改和删除" />
+    <MESSAGE value="JDBCTemplate 查询单个Object" />
+    <MESSAGE value="JDBCTemplate 查询list" />
+    <MESSAGE value="JDBCTemplate 批量操作" />
+    <MESSAGE value="Spring 的事务管理" />
+    <MESSAGE value="事务的属性设置" />
+    <MESSAGE value="事务的xml配置" />
+    <MESSAGE value="全注解的方式进行事务处理" />
+    <MESSAGE value="spring5的新特性  日志" />
+    <MESSAGE value="spring5的新特性  整合junit4 简化测试" />
+    <MESSAGE value="spring5的新特性  整合junit5 简化测试" />
+    <MESSAGE value="add readme.md" />
+    <option name="LAST_COMMIT_MESSAGE" value="add readme.md" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/1_IOC/src/bean/LifeBean.java</url>
+          <line>23</line>
+          <properties />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/1_IOC/src/bean7_autowire.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="319">
+          <caret line="11" column="11" lean-forward="true" selection-start-line="11" selection-start-column="11" selection-end-line="11" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/1_IOC/src/dao/impl/OrderDaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="319">
+          <caret line="11" column="16" lean-forward="true" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/1_IOC/src/bean9_annotation.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="203">
+          <caret line="7" column="20" lean-forward="true" selection-start-line="7" selection-start-column="20" selection-end-line="7" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/1_IOC/src/bean/DataSourceDemo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="223">
+          <caret line="25" column="85" lean-forward="true" selection-start-line="25" selection-start-column="6" selection-end-line="25" selection-end-column="85" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/1_IOC/src/bean8_jdbc.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="11" column="25" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/1_IOC/src/dao/impl/OrderDaoImpl2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="232">
+          <caret line="10" selection-start-line="10" selection-end-line="10" selection-end-column="11" />
+          <folding>
+            <element signature="e#354#355#0" expanded="true" />
+            <element signature="e#415#416#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/1_IOC/src/dao/OrderDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="261">
+          <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/1_IOC/src/dao/UserDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="174">
+          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/1_IOC/src/service/OrderService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="277">
+          <caret line="29" column="15" lean-forward="true" selection-start-line="29" selection-start-column="15" selection-end-line="29" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/3_JDBCTemplate/src/bean/Book.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="58">
+          <caret line="11" column="14" selection-start-line="11" selection-start-column="14" selection-end-line="11" selection-end-column="14" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#744#745#0" expanded="true" />
+            <element signature="e#770#771#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/3_JDBCTemplate/lib/spring-jdbc-5.2.6.RELEASE.jar!/org/springframework/jdbc/core/JdbcTemplate.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="540" column="17" selection-start-line="540" selection-start-column="17" selection-end-line="540" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/4_tx/4_tx.iml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-435" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/2_AOP/src/bean.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="290">
+          <caret line="10" column="51" lean-forward="true" selection-start-line="10" selection-start-column="3" selection-end-line="10" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/2_AOP/src/anno/UserDaoProxy2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="203">
+          <caret line="14" column="10" lean-forward="true" selection-start-line="14" selection-start-column="10" selection-end-line="14" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/3_JDBCTemplate/lib/spring-tx-5.2.6.RELEASE.jar!/org/springframework/transaction/annotation/Propagation.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="261">
+          <caret line="12" column="18" selection-start-line="12" selection-start-column="18" selection-end-line="12" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/3_JDBCTemplate/lib/spring-tx-5.2.6.RELEASE.jar!/org/springframework/transaction/annotation/Isolation.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="12" column="20" lean-forward="true" selection-start-line="8" selection-start-column="4" selection-end-line="12" selection-end-column="20" />
+          <folding>
+            <element signature="e#357#358#0" expanded="true" />
+            <element signature="e#391#392#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/3_JDBCTemplate/lib/spring-tx-5.2.6.RELEASE.jar!/org/springframework/transaction/annotation/Transactional.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="580">
+          <caret line="36" column="37" selection-start-line="36" selection-start-column="6" selection-end-line="36" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/4_tx/src/bean_base_xml.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="525">
+          <caret line="53" column="17" lean-forward="true" selection-start-line="38" selection-start-column="4" selection-end-line="53" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/3_JDBCTemplate/src/config/Config.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="377">
+          <caret line="13" column="21" lean-forward="true" selection-start-line="13" selection-start-column="21" selection-end-line="13" selection-end-column="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/4_tx/src/ppppp/service/UserServiceProxy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="11" column="10" lean-forward="true" selection-start-line="11" selection-start-column="10" selection-end-line="11" selection-end-column="10" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/3_JDBCTemplate/src/druid.properties">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/4_tx/src/druid.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="29">
+          <caret line="1" column="11" lean-forward="true" selection-start-line="1" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/4_tx/src/ppppp/config/druid.properties" />
+    <entry file="file://$PROJECT_DIR$/4_tx/src/bean.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="17" column="48" selection-start-line="17" selection-start-column="48" selection-end-line="17" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/5_newFeature/src/log4j2.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="15" column="24" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/5_newFeature/src/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="116">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/5_newFeature/src/MyLog.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="35" column="5" selection-start-line="18" selection-start-column="3" selection-end-line="35" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/5_newFeature/src/bean.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="232">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/5_newFeature/src/JUnit4.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-53">
+          <caret line="14" selection-start-line="14" selection-end-line="36" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#T_orgin#0;class#JUnit4#0" />
+            <element signature="e#913#914#0" expanded="true" />
+            <element signature="e#949#950#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/5_newFeature/src/JUnit5.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="21" column="52" lean-forward="true" selection-start-line="16" selection-end-line="21" selection-end-column="52" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#496#497#0" expanded="true" />
+            <element signature="e#536#537#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/3_JDBCTemplate/src/bean.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="16" column="18" lean-forward="true" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/3_JDBCTemplate/src/service/BookService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="290">
+          <caret line="25" column="28" lean-forward="true" selection-start-line="25" selection-start-column="4" selection-end-line="25" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#bookAdd#0;class#BookService#0" />
+            <element signature="method#bookAdd#1;class#BookService#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/4_tx/src/ppppp/dao/UserDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="174">
+          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/3_JDBCTemplate/src/dao/BookDaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="368">
+          <caret line="66" column="16" selection-start-line="66" selection-start-column="16" selection-end-line="66" selection-end-column="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/3_JDBCTemplate/src/dao/BookDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="754">
+          <caret line="26" column="8" selection-start-line="26" selection-start-column="4" selection-end-line="26" selection-end-column="8" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/1_IOC/src/config/SpringConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="18" column="25" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/1_IOC/src/bean/Collections.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="232">
+          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/1_IOC/src/bean/_1_base/Emp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="232">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/1_IOC/src/bean1_base.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-145">
+          <caret line="3" column="15" selection-start-line="3" selection-start-column="15" selection-end-line="3" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/1_IOC/src/bean/AutoWire.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="363">
+          <caret line="14" column="19" lean-forward="true" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/1_IOC/src/bean/MyBeanPost.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="232">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/1_IOC/src/bean/LifeBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="145">
+          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/1_IOC/src/service/UserService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="179">
+          <caret line="13" column="28" selection-start-line="11" selection-start-column="2" selection-end-line="13" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/1_IOC/src/bean3_inner.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="290">
+          <caret line="10" column="15" lean-forward="true" selection-start-line="8" selection-start-column="4" selection-end-line="10" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/4_tx/src/ppppp/config/TxConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="232">
+          <caret line="30" selection-start-line="30" selection-end-line="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/2_AOP/src/anno/ConfigAOP.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="406">
+          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" selection-end-column="48" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/2_AOP/src/anno/UserDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="348">
+          <caret line="12" column="18" lean-forward="true" selection-start-line="12" selection-start-column="18" selection-end-line="12" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/2_AOP/src/anno/UserDaoProxy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="823">
+          <caret line="50" column="5" lean-forward="true" selection-start-line="47" selection-start-column="3" selection-end-line="50" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/4_tx/src/ppppp/service/UserService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="232">
+          <caret line="23" column="26" selection-start-line="23" selection-start-column="26" selection-end-line="23" selection-end-column="26" />
+          <folding>
+            <element signature="method#T_annotation#0;class#UserService#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/4_tx/src/ppppp/dao/UserDaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="609">
+          <caret line="23" column="28" selection-start-line="23" selection-start-column="28" selection-end-line="23" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="29">
+            <caret line="1" column="8" selection-start-line="1" selection-start-column="8" selection-end-line="1" selection-end-column="8" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>No facets are configured</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>5_newFeature</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

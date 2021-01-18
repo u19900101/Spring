@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+<bean name="emp" class="bean._1_base.Emp">
+    <property name="id" value="10001"></property>
+    <!--方式1-->
+    <property name="person">
+        <bean id="person" class="bean._1_base.Person" p:age="20" p:name="p:静静"></bean>
+    </property>
+
+    <!--方式2-->
+    <!--<property name="person" ref="person"></property>-->
+    <!--<property name="person.name" value="inner_value"></property>-->
+</bean>
+    <!--方式3-->
+<!--<bean name="person" class="bean._1_base.Person">-->
+    <!--<property name="age" value="18"></property>-->
+<!--</bean>-->
+</beans>
