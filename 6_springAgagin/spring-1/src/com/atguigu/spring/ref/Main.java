@@ -6,13 +6,26 @@ import java.util.Date;
 
 import javax.sql.DataSource;
 
+import org.junit.Test;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 import com.atguigu.spring.helloworld.User;
 
 public class Main {
-	
+	@Test
+	public void T(){
+		ClassPathXmlApplicationContext ctx = new ClassPathXmlApplicationContext("beans-auto.xml");
+		//		DateFormat dateFormat = DateFormat.getDateInstance(DateFormat.FULL);
+		DateFormat dateFormat = (DateFormat) ctx.getBean("dateFormat");
+		System.out.println(dateFormat.format(new Date()));
+
+		Date date = (Date) ctx.getBean("datetime");
+		System.out.println(date);
+
+		// User user = (User) ctx.getBean("user");
+		// System.out.println(user);
+	}
 	public static void main(String[] args) throws SQLException {
 		
 		ClassPathXmlApplicationContext ctx = new ClassPathXmlApplicationContext("beans-auto.xml");

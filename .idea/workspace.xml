@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3b8fdc07-23ae-42c9-9495-7c0eec64329e" name="Default Changelist" comment="" />
+    <list default="true" id="3b8fdc07-23ae-42c9-9495-7c0eec64329e" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/6_springAgagin/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/6_springAgagin/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/6_springAgagin/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/6_springAgagin/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/6_springAgagin/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/6_springAgagin/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/6_springAgagin/spring-1/spring-1.iml" beforeDir="false" afterPath="$PROJECT_DIR$/6_springAgagin/spring-1/spring-1.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/6_springAgagin/spring-1/src/beans.xml" beforeDir="false" afterPath="$PROJECT_DIR$/6_springAgagin/spring-1/src/beans.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/6_springAgagin/spring-1/src/com/atguigu/spring/ref/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/6_springAgagin/spring-1/src/com/atguigu/spring/ref/Main.java" afterDir="false" />
+    </list>
     <list id="bedb1a8b-f792-4210-83b7-eaaae81d2aa4" name="Revert &quot;bean的复杂属性注入，外部注入和内部注入&quot;" comment="Revert &quot;bean的复杂属性注入，外部注入和内部注入&quot;&#10;&#10;This reverts commit d4b4ea22" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -11,7 +19,17 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="58">
+              <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -29,7 +47,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/1_start/src/bean6_life.xml" />
         <option value="$PROJECT_DIR$/1_start/src/bean7_autowire.xml" />
         <option value="$PROJECT_DIR$/1_start/src/bean/AutoWire.java" />
         <option value="$PROJECT_DIR$/1_start/src/bean3_inner.xml" />
@@ -48,13 +65,8 @@
         <option value="$PROJECT_DIR$/2_AOP/src/dao/UserDao.java" />
         <option value="$PROJECT_DIR$/2_AOP/src/dao/impl/UserDaoImpl.java" />
         <option value="$PROJECT_DIR$/2_AOP/src/UserProxy.java" />
-        <option value="$PROJECT_DIR$/2_AOP/src/JDKproxy.java" />
-        <option value="$PROJECT_DIR$/2_AOP/src/UserDaoProxy.java" />
-        <option value="$PROJECT_DIR$/2_AOP/src/anno/UserDao.java" />
-        <option value="$PROJECT_DIR$/2_AOP/src/anno/UserDaoProxy2.java" />
         <option value="$PROJECT_DIR$/2_AOP/src/xml/Book.java" />
         <option value="$PROJECT_DIR$/2_AOP/src/anno/Config.java" />
-        <option value="$PROJECT_DIR$/2_AOP/src/anno/UserDaoProxy.java" />
         <option value="$PROJECT_DIR$/2_AOP/src/bean.xml" />
         <option value="$PROJECT_DIR$/2_AOP/src/bean_book.xml" />
         <option value="$PROJECT_DIR$/2_AOP/src/xml/BookProxy.java" />
@@ -80,6 +92,12 @@
         <option value="$PROJECT_DIR$/5_newFeature/src/JUnit5.java" />
         <option value="$PROJECT_DIR$/4_tx/src/ppppp/config/TxConfig.java" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/2_AOP/src/JDKproxy.java" />
+        <option value="$PROJECT_DIR$/2_AOP/src/UserDaoProxy.java" />
+        <option value="$PROJECT_DIR$/2_AOP/src/anno/UserDao.java" />
+        <option value="$PROJECT_DIR$/2_AOP/src/anno/UserDaoProxy2.java" />
+        <option value="$PROJECT_DIR$/2_AOP/src/anno/UserDaoProxy.java" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -112,7 +130,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -125,6 +142,7 @@
         </subPane>
       </pane>
       <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -134,8 +152,9 @@
     <property name="Repository.Attach.Sources" value="false" />
     <property name="TODO_SCOPE" value="All Places" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="add_unversioned_files" value="$PROJECT_DIR$/.gitignore" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1610803030594" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1610956955320" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../6_Maven_Git" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -172,7 +191,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.JUnit5.T_new">
+  <component name="RunManager" selected="JUnit.UserDaoProxy.T (1)">
     <configuration name="JUnit4.T_new" type="AndroidJUnit" temporary="true" nameIsGenerated="true">
       <module name="5_newFeature" />
       <option name="PACKAGE_NAME" value="" />
@@ -183,19 +202,9 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="JUnit4.T_orgin" type="AndroidJUnit" temporary="true" nameIsGenerated="true">
-      <module name="5_newFeature" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="JUnit4" />
-      <option name="METHOD_NAME" value="T_orgin" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MyLog (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="MyLog" />
-      <module name="5_newFeature" />
+    <configuration name="UserDaoProxy" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="UserDaoProxy" />
+      <module name="2_AOP" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -210,30 +219,46 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MyLog.testGenericApplicationContext" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="5_newFeature" />
+    <configuration name="UserDaoProxy.T (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="2_AOP" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="anno.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="anno" />
+      <option name="MAIN_CLASS_NAME" value="anno.UserDaoProxy" />
+      <option name="METHOD_NAME" value="T" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserDaoProxy.T" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="2_AOP" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="MyLog" />
-      <option name="METHOD_NAME" value="testGenericApplicationContext" />
+      <option name="MAIN_CLASS_NAME" value="UserDaoProxy" />
+      <option name="METHOD_NAME" value="T" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
-      <item itemvalue="Android JUnit.JUnit4.T_orgin" />
       <item itemvalue="Android JUnit.JUnit4.T_new" />
-      <item itemvalue="Application.MyLog (2)" />
-      <item itemvalue="JUnit.MyLog.testGenericApplicationContext" />
       <item itemvalue="JUnit.JUnit5.T_new" />
+      <item itemvalue="JUnit.UserDaoProxy.T" />
+      <item itemvalue="Application.UserDaoProxy" />
+      <item itemvalue="JUnit.UserDaoProxy.T (1)" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.UserDaoProxy.T (1)" />
+        <item itemvalue="Application.UserDaoProxy" />
+        <item itemvalue="JUnit.UserDaoProxy.T" />
         <item itemvalue="JUnit.JUnit5.T_new" />
         <item itemvalue="Android JUnit.JUnit4.T_new" />
-        <item itemvalue="Android JUnit.JUnit4.T_orgin" />
-        <item itemvalue="JUnit.MyLog.testGenericApplicationContext" />
-        <item itemvalue="Application.MyLog (2)" />
       </list>
     </recent_temporary>
   </component>
@@ -253,6 +278,7 @@
       <workItem from="1610584606603" duration="30282000" />
       <workItem from="1610669343073" duration="14990000" />
       <workItem from="1610759269830" duration="3097000" />
+      <workItem from="1610950036437" duration="7486000" />
     </task>
     <task id="LOCAL-00001" summary="属性注入的3种方式">
       <created>1610454723808</created>
@@ -520,43 +546,50 @@
       <option name="project" value="LOCAL" />
       <updated>1610760902124</updated>
     </task>
-    <option name="localTasksCounter" value="39" />
+    <task id="LOCAL-00039" summary="获取JoinPoint的name&amp;args">
+      <created>1610955628559</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1610955628559</updated>
+    </task>
+    <option name="localTasksCounter" value="40" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="UserService_T_allconfig - 2021.01.14 at 23h 29m 34s.xml">
-      <configuration name="UserService.T_allconfig" configurationId="JUnit" />
+    <history-entry file="UserDaoProxy_T_(1) - 2021.01.18 at 15h 05m 55s.xml">
+      <configuration name="UserDaoProxy.T (1)" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="UserService_T_allconfig - 2021.01.14 at 23h 30m 29s.xml">
-      <configuration name="UserService.T_allconfig" configurationId="JUnit" />
+    <history-entry file="UserDaoProxy_T_(1) - 2021.01.18 at 15h 07m 36s.xml">
+      <configuration name="UserDaoProxy.T (1)" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MyLog_testGenericApplicationContext - 2021.01.15 at 08h 49m 18s.xml">
-      <configuration name="MyLog.testGenericApplicationContext" configurationId="AndroidJUnit" />
+    <history-entry file="UserDaoProxy_T_(1) - 2021.01.18 at 15h 08m 26s.xml">
+      <configuration name="UserDaoProxy.T (1)" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MyLog_testGenericApplicationContext - 2021.01.15 at 08h 49m 54s.xml">
-      <configuration name="MyLog.testGenericApplicationContext" configurationId="AndroidJUnit" />
+    <history-entry file="UserDaoProxy_T_(1) - 2021.01.18 at 15h 10m 20s.xml">
+      <configuration name="UserDaoProxy.T (1)" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MyLog_testGenericApplicationContext - 2021.01.15 at 08h 51m 15s.xml">
-      <configuration name="MyLog.testGenericApplicationContext" configurationId="JUnit" />
+    <history-entry file="UserDaoProxy_T_(1) - 2021.01.18 at 15h 15m 56s.xml">
+      <configuration name="UserDaoProxy.T (1)" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="JUnit4_T_orgin - 2021.01.15 at 08h 59m 25s.xml">
-      <configuration name="JUnit4.T_orgin" configurationId="AndroidJUnit" />
+    <history-entry file="UserDaoProxy_T_(1) - 2021.01.18 at 15h 16m 52s.xml">
+      <configuration name="UserDaoProxy.T (1)" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="JUnit4_T_new - 2021.01.15 at 09h 07m 02s.xml">
-      <configuration name="JUnit4.T_new" configurationId="AndroidJUnit" />
+    <history-entry file="UserDaoProxy_T_(1) - 2021.01.18 at 15h 18m 49s.xml">
+      <configuration name="UserDaoProxy.T (1)" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="JUnit4_T_new - 2021.01.15 at 09h 07m 33s.xml">
-      <configuration name="JUnit4.T_new" configurationId="AndroidJUnit" />
+    <history-entry file="UserDaoProxy_T_(1) - 2021.01.18 at 15h 20m 06s.xml">
+      <configuration name="UserDaoProxy.T (1)" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="JUnit5_T_new - 2021.01.15 at 09h 18m 52s.xml">
-      <configuration name="JUnit5.T_new" configurationId="JUnit" />
+    <history-entry file="UserDaoProxy_T_(1) - 2021.01.18 at 15h 21m 40s.xml">
+      <configuration name="UserDaoProxy.T (1)" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="JUnit5_T_new - 2021.01.15 at 09h 19m 55s.xml">
-      <configuration name="JUnit5.T_new" configurationId="JUnit" />
+    <history-entry file="UserDaoProxy_T_(1) - 2021.01.18 at 15h 35m 01s.xml">
+      <configuration name="UserDaoProxy.T (1)" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="89891000" />
+    <option name="totallyTimeSpent" value="97377000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -569,8 +602,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="878" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18699732" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2600536" />
       <window_info id="Designer" order="1" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Capture Tool" order="3" />
@@ -585,10 +619,10 @@
       <window_info anchor="bottom" id="Messages" order="5" weight="0.5193906" />
       <window_info anchor="bottom" id="Message" order="6" />
       <window_info anchor="bottom" id="Find" order="7" weight="0.32963988" />
-      <window_info anchor="bottom" id="Debug" order="8" weight="0.48891968" />
+      <window_info anchor="bottom" id="Debug" order="8" weight="0.48060942" />
       <window_info anchor="bottom" id="Cvs" order="9" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="10" weight="0.4" />
-      <window_info anchor="bottom" id="Run" order="11" weight="0.3199446" />
+      <window_info anchor="bottom" id="Run" order="11" weight="0.5567867" />
       <window_info anchor="bottom" id="TODO" order="12" weight="0.32963988" />
       <window_info anchor="bottom" id="Version Control" order="13" weight="0.71883655" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
@@ -688,7 +722,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="使用注解注入" />
     <MESSAGE value="Autowired &amp; Qualifier 实现属性注入" />
     <MESSAGE value="@Resource 实现属性注入" />
     <MESSAGE value="@Configuration 纯注解开发" />
@@ -713,7 +746,8 @@
     <MESSAGE value="spring5的新特性  整合junit4 简化测试" />
     <MESSAGE value="spring5的新特性  整合junit5 简化测试" />
     <MESSAGE value="add readme.md" />
-    <option name="LAST_COMMIT_MESSAGE" value="add readme.md" />
+    <MESSAGE value="获取JoinPoint的name&amp;args" />
+    <option name="LAST_COMMIT_MESSAGE" value="获取JoinPoint的name&amp;args" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -724,6 +758,24 @@
           <properties />
           <option name="timeStamp" value="1" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/2_AOP/src/UserDaoProxy.java</url>
+          <line>42</line>
+          <properties />
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/2_AOP/src/anno/UserDaoProxy.java</url>
+          <line>63</line>
+          <properties />
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/2_AOP/src/anno/UserDao.java</url>
+          <line>13</line>
+          <properties />
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
@@ -732,194 +784,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/1_IOC/src/bean7_autowire.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="319">
-          <caret line="11" column="11" lean-forward="true" selection-start-line="11" selection-start-column="11" selection-end-line="11" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/1_IOC/src/dao/impl/OrderDaoImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="319">
-          <caret line="11" column="16" lean-forward="true" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="16" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/1_IOC/src/bean9_annotation.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="203">
-          <caret line="7" column="20" lean-forward="true" selection-start-line="7" selection-start-column="20" selection-end-line="7" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/1_IOC/src/bean/DataSourceDemo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="223">
-          <caret line="25" column="85" lean-forward="true" selection-start-line="25" selection-start-column="6" selection-end-line="25" selection-end-column="85" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/1_IOC/src/bean8_jdbc.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="11" column="25" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/1_IOC/src/dao/impl/OrderDaoImpl2.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="232">
-          <caret line="10" selection-start-line="10" selection-end-line="10" selection-end-column="11" />
-          <folding>
-            <element signature="e#354#355#0" expanded="true" />
-            <element signature="e#415#416#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/1_IOC/src/dao/OrderDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="261">
-          <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/1_IOC/src/dao/UserDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="174">
-          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/1_IOC/src/service/OrderService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="277">
-          <caret line="29" column="15" lean-forward="true" selection-start-line="29" selection-start-column="15" selection-end-line="29" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/3_JDBCTemplate/src/bean/Book.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="58">
-          <caret line="11" column="14" selection-start-line="11" selection-start-column="14" selection-end-line="11" selection-end-column="14" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#744#745#0" expanded="true" />
-            <element signature="e#770#771#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/3_JDBCTemplate/lib/spring-jdbc-5.2.6.RELEASE.jar!/org/springframework/jdbc/core/JdbcTemplate.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="540" column="17" selection-start-line="540" selection-start-column="17" selection-end-line="540" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/4_tx/4_tx.iml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-435" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/2_AOP/src/bean.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="290">
-          <caret line="10" column="51" lean-forward="true" selection-start-line="10" selection-start-column="3" selection-end-line="10" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/2_AOP/src/anno/UserDaoProxy2.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="203">
-          <caret line="14" column="10" lean-forward="true" selection-start-line="14" selection-start-column="10" selection-end-line="14" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/3_JDBCTemplate/lib/spring-tx-5.2.6.RELEASE.jar!/org/springframework/transaction/annotation/Propagation.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="261">
-          <caret line="12" column="18" selection-start-line="12" selection-start-column="18" selection-end-line="12" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/3_JDBCTemplate/lib/spring-tx-5.2.6.RELEASE.jar!/org/springframework/transaction/annotation/Isolation.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="12" column="20" lean-forward="true" selection-start-line="8" selection-start-column="4" selection-end-line="12" selection-end-column="20" />
-          <folding>
-            <element signature="e#357#358#0" expanded="true" />
-            <element signature="e#391#392#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/3_JDBCTemplate/lib/spring-tx-5.2.6.RELEASE.jar!/org/springframework/transaction/annotation/Transactional.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="580">
-          <caret line="36" column="37" selection-start-line="36" selection-start-column="6" selection-end-line="36" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/4_tx/src/bean_base_xml.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="53" column="17" lean-forward="true" selection-start-line="38" selection-start-column="4" selection-end-line="53" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/3_JDBCTemplate/src/config/Config.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="377">
-          <caret line="13" column="21" lean-forward="true" selection-start-line="13" selection-start-column="21" selection-end-line="13" selection-end-column="21" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/4_tx/src/ppppp/service/UserServiceProxy.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="11" column="10" lean-forward="true" selection-start-line="11" selection-start-column="10" selection-end-line="11" selection-end-column="10" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/3_JDBCTemplate/src/druid.properties">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/4_tx/src/druid.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="29">
-          <caret line="1" column="11" lean-forward="true" selection-start-line="1" selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/4_tx/src/ppppp/config/druid.properties" />
-    <entry file="file://$PROJECT_DIR$/4_tx/src/bean.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="17" column="48" selection-start-line="17" selection-start-column="48" selection-end-line="17" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/5_newFeature/src/log4j2.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="15" column="24" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/5_newFeature/src/User.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="116">
@@ -1107,20 +971,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/2_AOP/src/anno/UserDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="348">
-          <caret line="12" column="18" lean-forward="true" selection-start-line="12" selection-start-column="18" selection-end-line="12" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/2_AOP/src/anno/UserDaoProxy.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="823">
-          <caret line="50" column="5" lean-forward="true" selection-start-line="47" selection-start-column="3" selection-end-line="50" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/4_tx/src/ppppp/service/UserService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="232">
@@ -1148,6 +998,218 @@
             <caret line="1" column="8" selection-start-line="1" selection-start-column="8" selection-end-line="1" selection-end-column="8" />
           </first_editor>
           <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/2_AOP/src/JDKproxy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="261">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/2_AOP/src/dao/UserDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="232">
+          <caret line="8" column="16" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/2_AOP/src/dao/impl/UserDaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="516">
+          <caret line="18" column="5" lean-forward="true" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
+          <folding>
+            <element signature="e#311#312#0" expanded="true" />
+            <element signature="e#363#364#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/2_AOP/src/UserDaoProxy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="353">
+          <caret line="21" column="25" lean-forward="true" selection-start-line="21" selection-start-column="25" selection-end-line="21" selection-end-column="25" />
+          <folding>
+            <element signature="e#359#360#0" expanded="true" />
+            <element signature="e#389#390#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/2_AOP/lib/spring-core-5.2.6.RELEASE.jar!/org/springframework/cglib/proxy/MethodProxy.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="102" selection-start-line="102" selection-end-line="102" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/2_AOP/lib/spring-aop-5.2.6.RELEASE.jar!/org/springframework/aop/framework/adapter/MethodBeforeAdviceInterceptor.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="24" selection-start-line="24" selection-end-line="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/2_AOP/lib/spring-aop-5.2.6.RELEASE.jar!/org/springframework/aop/aspectj/MethodInvocationProceedingJoinPoint.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="41" selection-start-line="41" selection-end-line="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/2_AOP/lib/spring-aop-5.2.6.RELEASE.jar!/org/springframework/aop/aspectj/AbstractAspectJAdvice.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="97">
+          <caret line="414" selection-start-line="414" selection-end-line="414" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/2_AOP/lib/spring-aop-5.2.6.RELEASE.jar!/org/springframework/aop/aspectj/AspectJAroundAdvice.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="128">
+          <caret line="39" selection-start-line="39" selection-end-line="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/2_AOP/lib/spring-aop-5.2.6.RELEASE.jar!/org/springframework/aop/aspectj/AspectJAfterAdvice.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="128">
+          <caret line="21" selection-start-line="21" selection-end-line="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/2_AOP/lib/spring-aop-5.2.6.RELEASE.jar!/org/springframework/aop/framework/adapter/AfterReturningAdviceInterceptor.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="128">
+          <caret line="23" selection-start-line="23" selection-end-line="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/2_AOP/lib/spring-aop-5.2.6.RELEASE.jar!/org/springframework/aop/aspectj/AspectJAfterThrowingAdvice.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="128">
+          <caret line="32" selection-start-line="32" selection-end-line="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/2_AOP/lib/spring-aop-5.2.6.RELEASE.jar!/org/springframework/aop/interceptor/ExposeInvocationInterceptor.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="128">
+          <caret line="43" selection-start-line="43" selection-end-line="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/2_AOP/lib/spring-aop-5.2.6.RELEASE.jar!/org/springframework/aop/framework/ReflectiveMethodInvocation.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="83">
+          <caret line="77" selection-start-line="77" selection-end-line="77" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/2_AOP/lib/spring-aop-5.2.6.RELEASE.jar!/org/springframework/aop/framework/CglibAopProxy.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="97">
+          <caret line="478" selection-start-line="478" selection-end-line="478" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/internal/runners/model/ReflectiveCallable.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="296">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/runners/ParentRunner.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="128">
+          <caret line="203" selection-start-line="203" selection-end-line="203" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/2_AOP/src/bean.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="232">
+          <caret line="8" column="38" lean-forward="true" selection-start-line="8" selection-start-column="38" selection-end-line="8" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/2_AOP/src/anno/UserDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="377">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/2_AOP/src/anno/UserDaoProxy2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="121">
+          <caret line="14" lean-forward="true" selection-start-line="14" selection-start-column="3" selection-end-line="16" selection-end-column="12" />
+          <folding>
+            <element signature="e#619#620#0" expanded="true" />
+            <element signature="e#683#684#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/2_AOP/src/anno/UserDaoProxy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="116">
+          <caret line="16" column="3" lean-forward="true" selection-start-line="16" selection-start-column="3" selection-end-line="16" selection-end-column="3" />
+          <folding>
+            <element signature="e#1293#1294#0" expanded="true" />
+            <element signature="e#1342#1343#0" expanded="true" />
+            <element signature="e#1737#1738#0" expanded="true" />
+            <element signature="e#1795#1796#0" expanded="true" />
+            <element signature="e#1913#1914#0" expanded="true" />
+            <element signature="e#1970#1971#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/6_springAgagin/spring-4/src/com/atguigu/spring/jdbc/JDBCTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="79">
+          <caret line="113" column="59" lean-forward="true" selection-start-line="113" selection-start-column="10" selection-end-line="113" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/6_springAgagin/spring-4/src/com/atguigu/spring/tx/BookShopServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="580">
+          <caret line="33" column="4" selection-start-line="33" selection-start-column="4" selection-end-line="33" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/4_tx/src/bean.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-197">
+          <caret line="17" column="48" selection-start-line="17" selection-start-column="48" selection-end-line="17" selection-end-column="48" />
+          <folding>
+            <element signature="e#1216#1241#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/4_tx/src/bean_base_xml.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="174">
+          <caret line="42" column="66" lean-forward="true" selection-start-line="42" selection-start-column="9" selection-end-line="42" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/6_springAgagin/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="635">
+          <caret line="38" selection-start-line="38" selection-end-line="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="58">
+          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
         </state>
       </provider>
     </entry>

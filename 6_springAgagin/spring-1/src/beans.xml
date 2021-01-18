@@ -101,7 +101,7 @@
 	<!-- bean 的配置能够继承吗 ? 使用 parent 来完成继承 -->	
 	<bean id="user4" parent="user" p:userName="Bob"></bean>
 	
-	<bean id="user6" parent="user" p:userName="维多利亚"></bean>
+	<bean id="user6" parent="user" p:userName="维多利亚" ></bean>
 	
 	<!-- 测试 depents-on -->	
 	<bean id="user5" parent="user" p:userName="Backham" depends-on="user6"></bean>
