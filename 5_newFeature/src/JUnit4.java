@@ -23,6 +23,7 @@ public class JUnit4 {
         ApplicationContext context = new ClassPathXmlApplicationContext("bean.xml");
         User user = context.getBean("user", User.class);
         System.out.println(user);
+
     }
 
 
