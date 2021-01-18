@@ -12,9 +12,9 @@ import org.springframework.stereotype.Component;
  * @author lppppp
  * @create 2021-01-13 22:55
  */
-@Component
-@Aspect
-@Order(2)
+// @Component
+// @Aspect
+// @Order(2)
 public class UserDaoProxy2 {
     //相同切入点的抽取
     @Pointcut(value = "execution(* anno.UserDao.add(..))")
