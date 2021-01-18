@@ -3,12 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="3b8fdc07-23ae-42c9-9495-7c0eec64329e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/6_springAgagin/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/6_springAgagin/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/6_springAgagin/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/6_springAgagin/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/6_springAgagin/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/6_springAgagin/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/6_springAgagin/spring-1/spring-1.iml" beforeDir="false" afterPath="$PROJECT_DIR$/6_springAgagin/spring-1/spring-1.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/6_springAgagin/spring-1/src/beans.xml" beforeDir="false" afterPath="$PROJECT_DIR$/6_springAgagin/spring-1/src/beans.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/6_springAgagin/spring-1/src/com/atguigu/spring/ref/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/6_springAgagin/spring-1/src/com/atguigu/spring/ref/Main.java" afterDir="false" />
     </list>
     <list id="bedb1a8b-f792-4210-83b7-eaaae81d2aa4" name="Revert &quot;bean的复杂属性注入，外部注入和内部注入&quot;" comment="Revert &quot;bean的复杂属性注入，外部注入和内部注入&quot;&#10;&#10;This reverts commit d4b4ea22" />
     <ignored path="$PROJECT_DIR$/out/" />
@@ -23,8 +17,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="58">
-              <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
+            <state relative-caret-position="116">
+              <caret line="4" column="3" selection-start-line="4" selection-start-column="3" selection-end-line="4" selection-end-column="3" />
             </state>
           </provider>
         </entry>
@@ -137,6 +131,11 @@
               <item name="5_Spring" type="b2602c69:ProjectViewProjectNode" />
               <item name="5_Spring" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="5_Spring" type="b2602c69:ProjectViewProjectNode" />
+              <item name="5_Spring" type="462c0819:PsiDirectoryNode" />
+              <item name="5_newFeature" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -154,7 +153,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="add_unversioned_files" value="$PROJECT_DIR$/.gitignore" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1610957842845" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1610958496809" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../6_Maven_Git" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -278,7 +277,7 @@
       <workItem from="1610584606603" duration="30282000" />
       <workItem from="1610669343073" duration="14990000" />
       <workItem from="1610759269830" duration="3097000" />
-      <workItem from="1610950036437" duration="7486000" />
+      <workItem from="1610950036437" duration="8257000" />
     </task>
     <task id="LOCAL-00001" summary="属性注入的3种方式">
       <created>1610454723808</created>
@@ -553,7 +552,28 @@
       <option name="project" value="LOCAL" />
       <updated>1610955628559</updated>
     </task>
-    <option name="localTasksCounter" value="40" />
+    <task id="LOCAL-00040" summary="add ignore">
+      <created>1610957754431</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1610957754431</updated>
+    </task>
+    <task id="LOCAL-00041" summary="add ignore">
+      <created>1610957814206</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1610957814206</updated>
+    </task>
+    <task id="LOCAL-00042" summary="add ignore">
+      <created>1610957922946</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1610957922946</updated>
+    </task>
+    <option name="localTasksCounter" value="43" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -589,7 +609,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="97377000" />
+    <option name="totallyTimeSpent" value="98148000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -722,7 +742,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Autowired &amp; Qualifier 实现属性注入" />
     <MESSAGE value="@Resource 实现属性注入" />
     <MESSAGE value="@Configuration 纯注解开发" />
     <MESSAGE value="修改名称" />
@@ -747,7 +766,8 @@
     <MESSAGE value="spring5的新特性  整合junit5 简化测试" />
     <MESSAGE value="add readme.md" />
     <MESSAGE value="获取JoinPoint的name&amp;args" />
-    <option name="LAST_COMMIT_MESSAGE" value="获取JoinPoint的name&amp;args" />
+    <MESSAGE value="add ignore" />
+    <option name="LAST_COMMIT_MESSAGE" value="add ignore" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1208,8 +1228,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="58">
-          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
+        <state relative-caret-position="116">
+          <caret line="4" column="3" selection-start-line="4" selection-start-column="3" selection-end-line="4" selection-end-column="3" />
         </state>
       </provider>
     </entry>
