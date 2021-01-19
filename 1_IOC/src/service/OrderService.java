@@ -36,7 +36,7 @@ public class OrderService {
     @Test
     public void T(){
         ApplicationContext context = new ClassPathXmlApplicationContext("bean9_annotation.xml");
-        OrderService orderService = context.getBean("orderService", OrderService.class);
+        OrderService orderService = context.getBean(OrderService.class);
         orderService.add();
     }
 
