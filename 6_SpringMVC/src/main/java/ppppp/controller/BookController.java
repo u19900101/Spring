@@ -15,7 +15,7 @@ import java.util.Map;
  * @create 2021-01-19 21:35
  */
 @Controller
-@SessionAttributes(value = "msg")
+// @SessionAttributes(value = "msg")//尽量不用此注释
 public class BookController {
 
 
