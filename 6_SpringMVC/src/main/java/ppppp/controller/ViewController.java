@@ -30,6 +30,18 @@ public class ViewController {
     @RequestMapping("/h3")
     public String h3(){
         System.out.println("h3");
-        return "redirect:/success.jsp";
+        return "redirect:/M.jsp";
+    }
+
+    @RequestMapping("/h4")
+    public String h4(){
+        System.out.println("h4");
+        return "i18n2";
+    }
+
+    @RequestMapping("/h5")
+    public String h5(){
+        System.out.println("h5");
+        return "../../M";
     }
 }

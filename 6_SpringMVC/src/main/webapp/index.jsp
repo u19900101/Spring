@@ -10,6 +10,8 @@
     <input type="submit" value="H2"/>
 </form>
 
+<h2><a href="i18n2">经过jsp来访问国际化</a></h2>
+
 <form action="book" method="post">
     <input type="hidden" name="id" value="1000"/>
     书 名： 西游记
