@@ -1,10 +1,7 @@
 package ppppp.controller;
 
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.*;
 
 /**
  * @author lppppp
@@ -14,10 +11,11 @@ import org.springframework.web.bind.annotation.RequestParam;
 @Controller
 public class HelloWorldController {
     // @RequestMapping("hello")  // 写不写 / 都可以
+    @ResponseBody
     @RequestMapping("/hello")
     public String Hello(){
         System.out.println("hello");
-        return "success";
+        return "<h1>success</h1>";
     }
 
     @RequestMapping(value = "/h2",method = RequestMethod.POST,params = {"username"})
