@@ -1,9 +1,12 @@
 package ppppp.RESTFulCRUD.entities;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.hibernate.validator.constraints.Email;
 import org.hibernate.validator.constraints.Length;
 import org.hibernate.validator.constraints.NotEmpty;
 import org.springframework.format.annotation.DateTimeFormat;
+import org.springframework.web.bind.annotation.ResponseBody;
 
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Past;
@@ -23,10 +26,17 @@ public class Employee {
 	//1 male, 0 female
 	private Integer gender;
 
+	//控制返回到页面的格式
+	@JsonFormat(pattern = "yyyy-MM-dd")
 	@NotNull(message = "不能为空")
 	@DateTimeFormat(pattern = "yyyy-MM-dd")
 	@Past
 	private Date birth;
+
+	@JsonIgnore
+	private Department department;
+
+
 
 	public Date getBirth() {
 		return birth;
@@ -36,7 +46,7 @@ public class Employee {
 		this.birth = birth;
 	}
 
-	private Department department;
+
 	
 	public Integer getId() {
 		return id;
