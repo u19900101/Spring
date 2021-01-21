@@ -18,6 +18,7 @@
         <th>lastName</th>
         <th>email</th>
         <th>gender</th>
+        <th>birth</th>
         <th>departmentName</th>
         <th>EDIT</th>
         <th>DELETE</th>
@@ -30,6 +31,7 @@
             <td>${emp.lastName}</td>
             <td>${emp.email}</td>
             <td>${emp.gender==0?"女":"男"}</td>
+            <td>${emp.birth}</td>
             <td>${emp.department.departmentName}</td>
             <td><a href="emp/${emp.id}">修改</a></td>
             <td><a href="emp/${emp.id}" class="deleteItem">删除</a></td>
@@ -39,7 +41,7 @@
             </td>--%>
         </tr>
     </c:forEach>
-    <form id = "deleteForm" action="emp/${emp.id}" method="post">
+    <form id = "deleteForm" action="" method="post">
         <input type="hidden" name="_method" value="DELETE">
     </form>
 

@@ -25,6 +25,7 @@
     性别：<br>
     男：<form:radiobutton path="gender" value="1"></form:radiobutton><br>
     女：<form:radiobutton path="gender" value="0"></form:radiobutton><br>
+    生日：<form:input path="birth"></form:input><br>
     部门：
     <form:select path="department.id" items="${departments}"
                  itemLabel="departmentName" itemValue="id">

@@ -1,16 +1,41 @@
 package ppppp.RESTFulCRUD.entities;
 
+import org.hibernate.validator.constraints.Email;
+import org.hibernate.validator.constraints.Length;
+import org.hibernate.validator.constraints.NotEmpty;
+import org.springframework.format.annotation.DateTimeFormat;
+
+import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Past;
 import java.util.Date;
 
 public class Employee {
 
 	private Integer id;
+	// @NotNull(message = "不能为空")
+	// @Length(max = 18,min = 3,message = "长度必须不正确")
+	@Length(max = 18,min = 3)
 	private String lastName;
 
+	@Email
+	@NotEmpty(message = "不能为空")
 	private String email;
 	//1 male, 0 female
 	private Integer gender;
-	
+
+	@NotNull(message = "不能为空")
+	@DateTimeFormat(pattern = "yyyy-MM-dd")
+	@Past
+	private Date birth;
+
+	public Date getBirth() {
+		return birth;
+	}
+
+	public void setBirth(Date birth) {
+		this.birth = birth;
+	}
+
 	private Department department;
 	
 	public Integer getId() {
@@ -53,13 +78,12 @@ public class Employee {
 		this.department = department;
 	}
 
-	public Employee(Integer id, String lastName, String email, Integer gender,
-			Department department) {
-		super();
+	public Employee(Integer id, String lastName, String email, Integer gender, Date birth, Department department) {
 		this.id = id;
 		this.lastName = lastName;
 		this.email = email;
 		this.gender = gender;
+		this.birth = birth;
 		this.department = department;
 	}
 
@@ -68,10 +92,13 @@ public class Employee {
 
 	@Override
 	public String toString() {
-		return "Employee [id=" + id + ", lastName=" + lastName + ", email="
-				+ email + ", gender=" + gender + ", department=" + department
-				+ "]";
+		return "Employee{" +
+				"id=" + id +
+				", lastName='" + lastName + '\'' +
+				", email='" + email + '\'' +
+				", gender=" + gender +
+				", birth=" + birth +
+				", department=" + department +
+				'}';
 	}
-	
-	
 }
