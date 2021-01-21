@@ -57,11 +57,32 @@
                 // 不return false的话就会继续执行链接的指向
                 return false;
             });
+
+            $("#testAjax").click(function () {
+
+                $.ajax({
+                    url:"getAll",
+                    type:"GET",
+                    success:function (data) {
+                        console.log(data);
+                        $.each(data,function () {
+                            var empinfo = this.lastName+"--"+this.email+"--"+this.gender+"--"+this.birth;
+                            $("#div").append(empinfo+"<br/>")
+                        })
+                    }
+                });
+                return false;
+            });
+
+
         });
     </script>
 
     </tbody>
 </table>
-<a href="toaddpage">添加员工</a>
+<h1><a href="toaddpage">添加员工</a><br/></h1>
+
+<h1><a href="" id = "testAjax">通过ajax获取json</a></h1>
+<div id="div"></div>
 </body>
 </html>

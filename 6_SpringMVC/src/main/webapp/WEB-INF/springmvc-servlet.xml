@@ -31,4 +31,10 @@
     <!--处理静态资源无法访问到的情况-->
     <!--将spring无法处理的请求资源 交给tomcat处理-->
     <mvc:default-servlet-handler/>
+
+    <!--注册文件上传解析器-->
+    <bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
+        <property name="maxUploadSize" value="#{1024*1024*20}"></property>
+        <property name="defaultEncoding" value="utf-8"></property>
+    </bean>
 </beans>
