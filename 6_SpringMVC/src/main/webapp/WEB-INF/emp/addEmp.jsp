@@ -13,13 +13,9 @@
     <title>添加员工</title>
 </head>
 <body>
-原生表单：<br>
-
-<%
-    pageContext.setAttribute("ctp",request.getContextPath());
-%>
-<%= request.getContextPath()%>
-<form action="${ctp}/emp" method="post">
+<%--原生表单：<br>--%>
+<%--form 原生表单 --%>
+<%--<form action="${ctp}/emp" method="post">
     姓名：<input type="text" name="lastName"><br>
     邮箱：<input type="text" name="email"><br>
     性别：<br>
@@ -31,7 +27,7 @@
     </c:forEach>
 </select>
     <input type="submit" value="提交">
-</form>
+</form>--%>
 
 SpringMVC表单：<br>
 <%--最大的优点是可以直接回显隐藏模型中的值--%>

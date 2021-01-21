@@ -7,7 +7,7 @@
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
-<%
+<%  /*    /MVC    */
     pageContext.setAttribute("ctp", request.getContextPath());
 %>
 <html>
@@ -16,14 +16,14 @@
 </head>
 <body>
 
-<form:form action="${ctp}/emp/${employee.id}" method="post" modelAttribute="employee">
+<form:form action="${ctp}/emp" method="post" modelAttribute="employee">
     <input type="hidden" name="_method" value="put">
     <input type="hidden" name="id" value="${employee.id}">
 
-    姓名：<form:input path="lastName"></form:input><br>
+    姓名：<form:input path="lastName" readonly="true"></form:input><br>
     邮箱：<form:input path="email"></form:input><br>
     性别：<br>
-    男：<form:radiobutton path="gender" value="1"></form:radiobutton>
+    男：<form:radiobutton path="gender" value="1"></form:radiobutton><br>
     女：<form:radiobutton path="gender" value="0"></form:radiobutton><br>
     部门：
     <form:select path="department.id" items="${departments}"
