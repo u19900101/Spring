@@ -1,11 +1,11 @@
-package ppppp.RESTFulCRUD.json;
+package ppppp._1_RESTFulCRUD.json;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
-import ppppp.RESTFulCRUD.dao.EmployeeDao;
-import ppppp.RESTFulCRUD.entities.Employee;
+import ppppp._1_RESTFulCRUD.dao.EmployeeDao;
+import ppppp._1_RESTFulCRUD.entities.Employee;
 
 import java.util.Collection;
 

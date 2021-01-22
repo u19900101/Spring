@@ -1,11 +1,11 @@
-package ppppp.RESTFulCRUD.dao;
+package ppppp._1_RESTFulCRUD.dao;
 
 import java.util.Collection;
 import java.util.HashMap;
 import java.util.Map;
 
 import org.springframework.stereotype.Repository;
-import ppppp.RESTFulCRUD.entities.Department;
+import ppppp._1_RESTFulCRUD.entities.Department;
 
 
 @Repository

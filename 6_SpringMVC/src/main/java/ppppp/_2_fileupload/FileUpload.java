@@ -1,4 +1,4 @@
-package ppppp.fileupload;
+package ppppp._2_fileupload;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -22,7 +22,7 @@ public class FileUpload {
         System.out.println(username);
         try {
             for (MultipartFile file : multipartFile) {
-                file.transferTo(new File("D:\\MyJava\\5_Spring\\6_SpringMVC\\src\\main\\java\\ppppp\\fileupload\\"+file.getOriginalFilename()));
+                file.transferTo(new File("D:\\MyJava\\5_Spring\\6_SpringMVC\\src\\main\\java\\ppppp\\_2_fileupload\\"+file.getOriginalFilename()));
             }
             model.addAttribute("msg", "文件上传成功鸟！！！");
         } catch (IOException e) {

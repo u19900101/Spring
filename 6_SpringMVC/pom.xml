@@ -26,6 +26,22 @@
   <dependencies>
     <!--开始导包-->
 
+    <!--pageContext.setAttribute 爆红-->
+    <dependency>
+      <groupId>javax.servlet</groupId>
+      <artifactId>jsp-api</artifactId>
+      <version>2.0</version>
+      <scope>provided</scope>
+    </dependency>
+
+    <!--因为provided表明该包只在编译和测试的时候用，
+    所以，当启动tomcat的时候，就不会冲突了-->
+    <dependency>
+      <groupId>javax.servlet</groupId>
+      <artifactId>servlet-api</artifactId>
+      <version>2.5</version>
+      <scope>provided</scope>
+    </dependency>
     <!--文件上传-->
     <dependency>
       <groupId>commons-io</groupId>
@@ -227,6 +243,16 @@
       <artifactId>tomcat-embed-core</artifactId>
       <version>9.0.17</version>
     </dependency>
+    <dependency>
+      <groupId>before.maven-repository.javax.servlet</groupId>
+      <artifactId>javax.servlet-api</artifactId>
+      <version>3.1.0</version>
+    </dependency>
+      <dependency>
+          <groupId>before.before20.12.24.maven-repository.javax.servlet</groupId>
+          <artifactId>javax.servlet-api</artifactId>
+          <version>3.1.0</version>
+      </dependency>
     <dependency>
       <groupId>before.maven-repository.javax.servlet</groupId>
       <artifactId>javax.servlet-api</artifactId>

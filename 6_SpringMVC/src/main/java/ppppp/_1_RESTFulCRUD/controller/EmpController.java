@@ -1,19 +1,18 @@
-package ppppp.RESTFulCRUD.controller;
+package ppppp._1_RESTFulCRUD.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
 import org.springframework.validation.FieldError;
-import org.springframework.validation.ObjectError;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
-import ppppp.RESTFulCRUD.dao.DepartmentDao;
-import ppppp.RESTFulCRUD.dao.EmployeeDao;
-import ppppp.RESTFulCRUD.entities.Department;
-import ppppp.RESTFulCRUD.entities.Employee;
+import ppppp._1_RESTFulCRUD.dao.DepartmentDao;
+import ppppp._1_RESTFulCRUD.dao.EmployeeDao;
+import ppppp._1_RESTFulCRUD.entities.Department;
+import ppppp._1_RESTFulCRUD.entities.Employee;
 
 import javax.validation.Valid;
 import java.util.Collection;

@@ -1,4 +1,4 @@
-package ppppp.RESTFulCRUD.entities;
+package ppppp._1_RESTFulCRUD.entities;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.annotation.JsonIgnore;
@@ -6,7 +6,6 @@ import org.hibernate.validator.constraints.Email;
 import org.hibernate.validator.constraints.Length;
 import org.hibernate.validator.constraints.NotEmpty;
 import org.springframework.format.annotation.DateTimeFormat;
-import org.springframework.web.bind.annotation.ResponseBody;
 
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Past;

@@ -1,4 +1,4 @@
-package ppppp.RESTFulCRUD.dao;
+package ppppp._1_RESTFulCRUD.dao;
 
 import java.util.Collection;
 import java.util.Date;
@@ -7,8 +7,8 @@ import java.util.Map;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
-import ppppp.RESTFulCRUD.entities.Department;
-import ppppp.RESTFulCRUD.entities.Employee;
+import ppppp._1_RESTFulCRUD.entities.Department;
+import ppppp._1_RESTFulCRUD.entities.Employee;
 
 @Repository
 public class EmployeeDao {

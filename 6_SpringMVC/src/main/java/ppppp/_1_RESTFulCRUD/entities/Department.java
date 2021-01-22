@@ -1,4 +1,4 @@
-package ppppp.RESTFulCRUD.entities;
+package ppppp._1_RESTFulCRUD.entities;
 
 public class Department {
 
