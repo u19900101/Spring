@@ -1,4 +1,4 @@
-<%--
+<%@ page import="java.awt.*" %><%--
   Created by IntelliJ IDEA.
   User: liupannnnnnnnnn
   Date: 2021/1/20
@@ -13,8 +13,10 @@
 <head>
     <title>i18n</title>
 </head>
+<% pageContext.setAttribute("ctp", request.getContextPath());%>
 <body>
-<fmt:bundle basename="i18n"><fmt:message key="username"/></fmt:bundle>
+<a href="${ctp}/i18n2?locale=zh_CN">中文</a>
+<a href="${ctp}/i18n2?locale=en_US">英文</a>
 <form action="view/h1" method="post">
     <fmt:message key="username"/>:<input type="text" name="username"/><br/>
     <fmt:message key="password"/>:<input type="text" name="password"/><br/>

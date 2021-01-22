@@ -1,9 +1,9 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <html>
+<script type="text/javascript" src="${ctp}/scripts/jquery-1.9.1.min.js"></script>
 <head>
     <% pageContext.setAttribute("ctp", request.getContextPath());%>
-    <script type="text/javascript" src="${ctp}/scripts/jquery-1.9.1.min.js"></script>
     <title>员工列表</title>
 </head>
 <body>
