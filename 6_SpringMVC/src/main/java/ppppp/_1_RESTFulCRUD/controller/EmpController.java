@@ -27,6 +27,10 @@ import java.util.List;
 @Controller
 public class EmpController {
 
+    public EmpController() {
+        System.out.println("EmpController....");
+    }
+
     @Autowired
     EmployeeDao employeeDao;
     @Autowired

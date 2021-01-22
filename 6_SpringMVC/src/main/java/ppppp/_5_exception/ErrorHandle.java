@@ -23,14 +23,14 @@ public class ErrorHandle {
         return "forward:/error.jsp";
     }*/
 
-    //升级版 带回异常信息
+   /* //升级版 带回异常信息
     @ExceptionHandler(ArithmeticException.class)
     public ModelAndView e2_handler(Exception e){
         System.out.println("come into error Advance....");
         ModelAndView view = new ModelAndView("forward:/error.jsp");
         view.addObject("msg",e);
         return view;
-    }
+    }*/
 
 
 

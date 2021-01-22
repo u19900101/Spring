@@ -8,6 +8,18 @@
     <welcome-file>index.jsp</welcome-file>
   </welcome-file-list>
 
+  <!--加上 context-param 和下面的 listener 才能创建另一个容器 -->
+  <context-param>
+    <param-name>contextConfigLocation</param-name>
+    <param-value>classpath:spring.xml</param-value>
+  </context-param>
+
+  <listener>
+    <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
+  </listener>
+
+
+
   <!-- 配置SpringMVC核心控制器： -->
   <servlet>
     <!--<servlet-name>springDispatcherServlet</servlet-name>-->
