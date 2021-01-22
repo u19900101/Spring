@@ -14,17 +14,6 @@
         <property name="suffix" value=".jsp"></property>
     </bean>
 
-    <!-- 声明国际化资源文件 -->
-
-    <!--国际化-->
-    <bean class="org.springframework.context.support.ResourceBundleMessageSource" id="messageSource">
-        <!--国际化文件资源名-->
-        <property name="basename" value="i18n"/>
-    </bean>
-
-    <!--直接进行访问的配置,不需要再用@requestMap-->
-    <mvc:view-controller path="i18n2" view-name="../../i18n"></mvc:view-controller>
-
     <!--开启MVC注解驱动模式——目的 解决其他请求无法访问的情况-->
     <mvc:annotation-driven></mvc:annotation-driven>
 
@@ -37,4 +26,32 @@
         <property name="maxUploadSize" value="#{1024*1024*20}"></property>
         <property name="defaultEncoding" value="utf-8"></property>
     </bean>
+
+    <!--配置filter-->
+    <mvc:interceptors>
+        <!--默认拦截所有请求↓-->
+         <!--<bean class="ppppp._3_filter.MyHandlerInterceptor"></bean>-->
+
+        <!--拦截具体请求↓-->
+        <mvc:interceptor>
+            <!--只拦截path所对应的请求-->
+            <mvc:mapping path="/filter"/>
+            <bean class="ppppp._3_filter.MyHandlerInterceptor"></bean>
+        </mvc:interceptor>
+    </mvc:interceptors>
+
+
+    <!-- 声明国际化资源文件 -->
+
+    <!--国际化-->
+    <bean class="org.springframework.context.support.ResourceBundleMessageSource" id="messageSource">
+        <!--国际化文件资源名-->
+        <property name="basename" value="i18n"/>
+    </bean>
+
+    <!--配置区域解析器 id要固定 不然找不到-->
+    <bean class="ppppp._4_i18n.MyLocaleResolver" id="localeResolver"></bean>
+    <!--直接进行访问的配置,不需要再用@requestMap-->
+    <mvc:view-controller path="i18n2" view-name="../../i18n"></mvc:view-controller>
+
 </beans>
