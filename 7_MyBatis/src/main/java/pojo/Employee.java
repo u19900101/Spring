@@ -32,6 +32,16 @@ public class Employee {
 	@Past
 	private Date birth;
 
+	private String loginAccount;
+
+	public String getLoginAccount() {
+		return loginAccount;
+	}
+
+	public void setLoginAccount(String loginAccount) {
+		this.loginAccount = loginAccount;
+	}
+
 	public Employee(String lastName, String email, Integer gender, Date birth) {
 		this.lastName = lastName;
 		this.email = email;
@@ -114,18 +124,6 @@ public class Employee {
 	public Employee() {
 	}
 
-	/*@Override
-	public String toString() {
-		return "Employee{" +
-				"id=" + id +
-				", lastName='" + lastName + '\'' +
-				", email='" + email + '\'' +
-				", gender=" + gender +
-				", birth=" + birth +
-				", department=" + department +
-				'}';
-	}*/
-
 	@Override
 	public String toString() {
 		return "Employee{" +
@@ -134,6 +132,7 @@ public class Employee {
 				", email='" + email + '\'' +
 				", gender=" + gender +
 				", birth=" + birth +
+				", loginAccount='" + loginAccount + '\'' +
 				'}';
 	}
 }

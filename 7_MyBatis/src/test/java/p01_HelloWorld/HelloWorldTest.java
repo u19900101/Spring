@@ -1,3 +1,5 @@
+package p01_HelloWorld;
+
 import dao.EmployeeDao;
 import pojo.Employee;
 import org.apache.ibatis.io.Resources;
@@ -29,7 +31,7 @@ import java.io.InputStream;
 
 public class HelloWorldTest {
     public static SqlSessionFactory getSqlSessionFactory() throws IOException {
-        String resource = "mybatis-config.xml";
+        String resource = "p01_helloworld/mybatis-config.xml";
         InputStream inputStream = Resources.getResourceAsStream(resource);
         return new SqlSessionFactoryBuilder().build(inputStream);
     }
