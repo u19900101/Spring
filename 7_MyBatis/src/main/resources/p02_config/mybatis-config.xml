@@ -57,10 +57,11 @@
         <!--<mapper resource="p02_config/EmployeeDao.xml" />-->
 
         <!-- package 需要在test下建立同名的目录 才能找到xml-->
-        <!--<package name="dao"/>-->
+        <package name="dao"/>
         <!--注解版本的-->
-        <mapper class="dao.EmployeeDaoAnno"/>
+        <!--<mapper class="dao.EmployeeDaoAnno"/>-->
         <!-- 移动到同一文件夹下也不能注册-->
+        <!--更新解决方案 可以在main 文件夹下建立config设置为source文件夹 然后新建同名dao就可以找到-->
         <!--<mapper class="dao.EmployeeDao"/>-->
     </mappers>
 </configuration>
