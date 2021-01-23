@@ -9,7 +9,7 @@
 		resource：引入类路径下的资源
 		url：引入网络路径或者磁盘路径下的资源
 	  -->
-    <properties resource ="p02_config/dbconfig.properties"></properties>
+    <properties resource ="dbconfig.properties"></properties>
 
     <!--
     2、settings包含很多重要的设置项
@@ -55,7 +55,6 @@
     <!-- 将我们写好的sql映射文件（EmployeeMapper.xml）一定要注册到全局配置文件（mybatis-p02_config.xml）中 -->
     <mappers>
         <!--<mapper resource="p02_config/EmployeeDao.xml" />-->
-
         <!-- package 需要在test下建立同名的目录 才能找到xml-->
         <package name="dao"/>
         <!--注解版本的-->

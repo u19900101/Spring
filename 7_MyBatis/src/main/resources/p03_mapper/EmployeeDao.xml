@@ -4,7 +4,22 @@
 
     <select id="getEmpById" resultType="pojo.Employee">
         select * from t_employee where id = #{id}
-        </select>
+    </select>
+
+    <!--Employee getEmpByIdAndName(Integer id,String name);-->
+    <select id="getEmpByIdAndName" resultType="pojo.Employee">
+        select * from t_employee where id = #{id} and lastName=#{lastName}
+    </select>
+
+    <!--Employee getEmpByMap(Map map);-->
+    <!--<select id="getEmpByMap" resultType="pojo.Employee">
+        select * from t_employee where id = #{id} and lastName=#{lastName}
+    </select>-->
+    <!-- 演示动态的获取表名  此时只能使用$来动态赋值-->
+    <select id="getEmpByMap" resultType="pojo.Employee">
+        select * from ${tableName} where id = #{id} and lastName=#{lastName}
+    </select>
+
     <insert id="addEmp" useGeneratedKeys="true" keyProperty="id">
         insert into t_employee(lastName,email,gender,birth)values
          ( #{lastName},#{email},#{gender},#{birth})
