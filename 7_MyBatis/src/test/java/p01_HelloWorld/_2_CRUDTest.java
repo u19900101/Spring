@@ -22,8 +22,8 @@ public class _2_CRUDTest {
         try {
             sqlSession = sqlSessionFactory.openSession();
             EmployeeDao employeeDao = sqlSession.getMapper(EmployeeDao.class);
-            // int kk = employeeDao.addEmp(new Employee("kk", "123.kk@qq.com", 1, new Date()));
-            int kk = employeeDao.updateEmp(new Employee(2,"kk", "123.kk@qq.com", 1, new Date()));
+            int kk = employeeDao.addEmp(new Employee("kk", "123.kk@qq.com", 1, new Date()));
+            // int kk = employeeDao.updateEmp(new Employee(2,"kk", "123.kk@qq.com", 1, new Date()));
             // int kk = employeeDao.delEmp(2);
             System.out.println(kk);
         } catch (Exception e) {

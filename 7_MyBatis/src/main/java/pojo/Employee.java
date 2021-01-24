@@ -33,21 +33,9 @@ public class Employee {
 	private Date birth;
 
 	private String loginAccount;
+	@JsonIgnore
+	private Department department;
 
-	public String getLoginAccount() {
-		return loginAccount;
-	}
-
-	public void setLoginAccount(String loginAccount) {
-		this.loginAccount = loginAccount;
-	}
-
-	public Employee(String lastName, String email, Integer gender, Date birth) {
-		this.lastName = lastName;
-		this.email = email;
-		this.gender = gender;
-		this.birth = birth;
-	}
 
 	public Employee(Integer id, String lastName, String email, Integer gender, Date birth) {
 		this.id = id;
@@ -56,22 +44,27 @@ public class Employee {
 		this.gender = gender;
 		this.birth = birth;
 	}
-
-	@JsonIgnore
-	// private Department department;
-
-
-
-	public Date getBirth() {
-		return birth;
-	}
-
-	public void setBirth(Date birth) {
+	public Employee(String lastName, String email, Integer gender, Date birth) {
+		this.id = id;
+		this.lastName = lastName;
+		this.email = email;
+		this.gender = gender;
 		this.birth = birth;
 	}
 
+	@Override
+	public String toString() {
+		return "Employee{" +
+				"id=" + id +
+				", lastName='" + lastName + '\'' +
+				", email='" + email + '\'' +
+				", gender=" + gender +
+				", birth=" + birth +
+				", loginAccount='" + loginAccount + '\'' +
+				", department=" + department +
+				'}';
+	}
 
-	
 	public Integer getId() {
 		return id;
 	}
@@ -104,7 +97,23 @@ public class Employee {
 		this.gender = gender;
 	}
 
-	/*public Department getDepartment() {
+	public Date getBirth() {
+		return birth;
+	}
+
+	public void setBirth(Date birth) {
+		this.birth = birth;
+	}
+
+	public String getLoginAccount() {
+		return loginAccount;
+	}
+
+	public void setLoginAccount(String loginAccount) {
+		this.loginAccount = loginAccount;
+	}
+
+	public Department getDepartment() {
 		return department;
 	}
 
@@ -112,27 +121,16 @@ public class Employee {
 		this.department = department;
 	}
 
-	public Employee(Integer id, String lastName, String email, Integer gender, Date birth, Department department) {
+	public Employee(Integer id, String lastName, String email, Integer gender, Date birth, String loginAccount, Department department) {
 		this.id = id;
 		this.lastName = lastName;
 		this.email = email;
 		this.gender = gender;
 		this.birth = birth;
+		this.loginAccount = loginAccount;
 		this.department = department;
-	}*/
-
-	public Employee() {
 	}
 
-	@Override
-	public String toString() {
-		return "Employee{" +
-				"id=" + id +
-				", lastName='" + lastName + '\'' +
-				", email='" + email + '\'' +
-				", gender=" + gender +
-				", birth=" + birth +
-				", loginAccount='" + loginAccount + '\'' +
-				'}';
+	public Employee() {
 	}
 }

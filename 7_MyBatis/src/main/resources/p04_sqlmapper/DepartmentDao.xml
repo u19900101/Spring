@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="dao.DepartmentDao">
+
+    <!--1.List<Employee> getEmpsById(Integer id);-->
+    <!--id取别名的原因 ： 一样的话只能查出单条记录 不能查到 多条记录 -->
+    <select id="getEmpsById" resultMap="MyDep">
+        SELECT e.id eid,e.lastName,e.gender,e.birth,e.login_account,
+               d.id did,d.departmentName
+        FROM `t_employee` e
+                 LEFT JOIN `t_department` d ON e.`departmentid`=d.id
+        WHERE d.id=#{id}
+    </select>
+    <resultMap type="pojo.Department" id="MyDep">
+        <id column="did" property="id"/>
+        <result column="departmentName" property="departmentName"/>
+        <!-- collection的标签写法  ofType -->
+        <collection property="employeeList" ofType="pojo.Employee">
+            <id column="eid" property="id"/>
+            <result column="lastName" property="lastName"/>
+            <result column="email" property="email"/>
+            <result column="gender" property="gender"/>
+            <result column="birth" property="birth"/>
+            <result column="login_account" property="loginAccount"/>
+        </collection>
+    </resultMap>
+
+
+    <!--2.分步查询-->
+    <!--Department getDepById(Integer id);-->
+    <select id="getDepById" resultMap="MyDeptStep">
+        SELECT * FROM `t_department` WHERE id=#{id}
+    </select>
+    <resultMap type="pojo.Department" id="MyDeptStep">
+        <id column="id" property="id"/>
+        <result column="departmentName" property="departmentName"/>
+        <!-- 开启全局的懒加载后才能 此时才可以使用 fetchType 属性-->
+        <!-- association 和 collection 木有区别-->
+        <collection fetchType="lazy"
+                    property="employeeList"
+                     select="dao.EmployeeDao.getEmpByDepId"
+                     column="id">
+        </collection>
+    </resultMap>
+
+
+    <!--3.用分步查询改写 Department getEmpsByIdStep(Integer id);-->
+   <!-- <select id="getEmpsByIdStep" resultMap="DepStep">
+        SELECT * from `t_department` WHERE id=#{id}
+    </select>
+    <resultMap type="pojo.Department" id="DepStep">
+        <id column="id" property="id"/>
+        <result column="departmentName" property="departmentName"/>
+        &lt;!&ndash; collection的标签写法  ofType &ndash;&gt;
+        <collection property="employeeList" ofType="pojo.Employee"
+                    select="dao.EmployeeDao.getEmpByIdStep"
+                    fetchType="lazy">
+        </collection>
+    </resultMap>-->
+
+
+</mapper>
+

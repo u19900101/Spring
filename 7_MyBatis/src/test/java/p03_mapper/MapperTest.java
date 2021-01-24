@@ -12,6 +12,8 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.util.Date;
 import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
 /**
  * @author lppppp
@@ -24,7 +26,57 @@ public class MapperTest {
         return new SqlSessionFactoryBuilder().build(inputStream);
     }
 
+    // 查询获取 map
     // 多个参数的获取
+    @Test
+    public void T_all_map() throws IOException {
+        SqlSessionFactory sqlSessionFactory = getSqlSessionFactory();
+        SqlSession sqlSession = null;
+        try {
+            sqlSession = sqlSessionFactory.openSession();
+            EmployeeDao employeeDao = sqlSession.getMapper(EmployeeDao.class);
+            Map<Integer, Employee> allEmp = employeeDao.getAllEmpReturnMap();
+            System.out.println(allEmp);
+        } catch (Exception e) {
+            e.printStackTrace();
+        } finally {
+            sqlSession.close();
+        }
+    }
+
+    // 查询获取 单条map
+    @Test
+    public void T_map() throws IOException {
+        SqlSessionFactory sqlSessionFactory = getSqlSessionFactory();
+        SqlSession sqlSession = null;
+        try {
+            sqlSession = sqlSessionFactory.openSession();
+            EmployeeDao employeeDao = sqlSession.getMapper(EmployeeDao.class);
+            Map<String, Object> map = employeeDao.getEmpMapById(1);
+            System.out.println(map);
+        } catch (Exception e) {
+            e.printStackTrace();
+        } finally {
+            sqlSession.close();
+        }
+    }
+    // 查询获取list
+    // 多个参数的获取
+    @Test
+    public void T_all() throws IOException {
+        SqlSessionFactory sqlSessionFactory = getSqlSessionFactory();
+        SqlSession sqlSession = null;
+        try {
+            sqlSession = sqlSessionFactory.openSession();
+            EmployeeDao employeeDao = sqlSession.getMapper(EmployeeDao.class);
+            List<Employee> allEmp = employeeDao.getAllEmp();
+            allEmp.forEach(System.out::println);
+        } catch (Exception e) {
+            e.printStackTrace();
+        } finally {
+            sqlSession.close();
+        }
+    }
     @Test
     public void T() throws IOException {
         SqlSessionFactory sqlSessionFactory = getSqlSessionFactory();
