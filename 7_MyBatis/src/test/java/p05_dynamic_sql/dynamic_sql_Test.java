@@ -25,7 +25,7 @@ public class dynamic_sql_Test {
         return new SqlSessionFactoryBuilder().build(inputStream);
     }
 
-    // 关联查询
+    // where if 模糊查询
     @Test
     public void T_() throws IOException {
         SqlSessionFactory sqlSessionFactory = getSqlSessionFactory();
@@ -44,5 +44,24 @@ public class dynamic_sql_Test {
             sqlSession.close();
         }
     }
+
+  // <!--2. foreach 标签 解决 id = [1,2,3]形式的查询 -->
+    @Test
+    public void T_getEmpByIdsDynamic() throws IOException {
+        SqlSessionFactory sqlSessionFactory = getSqlSessionFactory();
+        SqlSession sqlSession = null;
+        try {
+            sqlSession = sqlSessionFactory.openSession();
+            EmployeeDao employeeDao = sqlSession.getMapper(EmployeeDao.class);
+            Integer[] ids = {1,2,3,30};
+            List<Employee> emp = employeeDao.getEmpByIdsDynamic(ids);
+            emp.forEach(System.out::println);
+        } catch (Exception e) {
+            e.printStackTrace();
+        } finally {
+            sqlSession.close();
+        }
+    }
+
 
 }

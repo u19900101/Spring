@@ -24,4 +24,5 @@ public interface EmployeeDao{
 
 	// 动态sel
 	List<Employee> getEmpByIdDynamic(Employee employee);
+	List<Employee> getEmpByIdsDynamic(@Param("ids") Integer[] ids);
 }
