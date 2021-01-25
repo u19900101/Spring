@@ -22,7 +22,7 @@ import java.util.List;
             3. 同一个SqlSession两次查询期间执行了任何一次**增删改**操作
             4. 同一个SqlSession两次查询期间手动清空了缓存
     * */
-public class cache_Test {
+public class cache_first_Level {
     public static SqlSessionFactory getSqlSessionFactory() throws IOException {
         String resource = "p06_cache/mybatis-config.xml";
         InputStream inputStream = Resources.getResourceAsStream(resource);
@@ -46,7 +46,7 @@ public class cache_Test {
 
             Employee emp2 = employeeDao2.getEmpById(1);
             System.out.println(emp2);
-            System.out.println(emp == emp2); // true
+            System.out.println(emp == emp2); // false
 
         } catch (Exception e) {
             e.printStackTrace();

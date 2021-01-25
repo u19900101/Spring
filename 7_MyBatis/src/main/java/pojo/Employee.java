@@ -9,10 +9,12 @@ import org.springframework.format.annotation.DateTimeFormat;
 
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Past;
+import java.io.Serializable;
 import java.util.Date;
-
-public class Employee {
-
+// 为实现二级缓存 实现序列化接口
+public class Employee  {
+	// implements Serializable
+	// private static final long serialVersionUID = -7390587151857533202L;
 	private Integer id;
 	// @NotNull(message = "不能为空")
 	// @Length(max = 18,min = 3,message = "长度必须不正确")
