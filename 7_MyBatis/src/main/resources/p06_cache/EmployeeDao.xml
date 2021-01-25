@@ -4,5 +4,24 @@
     <select id="getEmpById" resultType="pojo.Employee">
         SELECT * FROM t_employee WHERE id=#{id}
     </select>
+
+    <!--void updateEmpDynamic(Employee employee);-->
+    <update id="updateEmpDynamic">
+        update t_employee
+        <!--使用set标签 防止为空时的 ， 拼串错误-->
+        <set>
+            <if test="lastName!=null">
+                lastName=#{lastName},
+            </if>
+            <if test="email!=null">
+                email=#{email},
+            </if>
+            <if test="gender!=null">
+                gender=#{gender}
+            </if>
+        </set>
+        where id = #{id}
+    </update>
+
 </mapper>
 
