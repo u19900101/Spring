@@ -4,11 +4,10 @@
     <select id="getEmpByDepId" resultType="pojo.Employee">
         SELECT * FROM t_employee WHERE departmentid=#{departmentid}
     </select>
-    <!--3.动态sql if where -->
+    <!--1.动态sql if where -->
     <!--List<Employee>  getEmpByIdDynamic(Employee employee);-->
     <select id="getEmpByIdDynamic" resultMap="MyEmp">
         select * from t_employee
-
           <trim prefixOverrides="and" suffixOverrides="and">
           <!-- 后面多出的and或者or where标签不能解决
            prefix="":前缀： prefix给拼串后的整个字符串加一个前缀 。
@@ -20,12 +19,14 @@
                   <if test="id!=null">
                       and id > #{id}
                   </if>
-                  <if test="lastName!=null &amp;&amp; lastName!=&quot;&quot;">
+                  <!-- bind：可以将OGNL表达式的值绑定到一个变量中，
+                  方便后来引用这个变量的值 -->
+                  <bind name="lastName" value="'%'+lastName+'%'"/>
+                  <if test="lastName!=null and lastName!=&quot;&quot;">
                       and lastname like #{lastName} and
                   </if>
               </where>
           </trim>
-
     </select>
     <resultMap type="pojo.Employee" id="MyEmp">
         <id column="id" property="id"/>
@@ -48,6 +49,7 @@
         select * from t_employee
         where id in
         <!--(1,3,4)-->
+
 #         - collection：指定要遍历的集合：
 #         - list类型的参数会特殊处理封装在map中，map的key就叫list
 #         - item：将当前遍历出的元素赋值给指定的变量
@@ -60,8 +62,26 @@
       <foreach collection="ids" item="item" separator="," open="(" close=")">
           #{item}
       </foreach>
-
     </select>
+
+    <!--3.set-与if结合的动态更新-->
+    <!--void updateEmpDynamic(Employee employee);-->
+    <update id="updateEmpDynamic">
+        update t_employee
+        <!--使用set标签 防止为空时的 ， 拼串错误-->
+        <set>
+            <if test="lastName!=null">
+                lastName=#{lastName},
+            </if>
+            <if test="email!=null">
+                email=#{email},
+            </if>
+            <if test="gender!=null">
+                gender=#{gender}
+            </if>
+        </set>
+        where id = #{id}
+    </update>
 
 
 </mapper>

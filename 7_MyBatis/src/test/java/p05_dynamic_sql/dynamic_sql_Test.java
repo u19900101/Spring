@@ -35,7 +35,8 @@ public class dynamic_sql_Test {
             EmployeeDao employeeDao = sqlSession.getMapper(EmployeeDao.class);
             Employee employee = new Employee();
             employee.setId(5);
-            employee.setLastName("%k%");
+            // employee.setLastName("%k%");
+            employee.setLastName("k");
             List<Employee> emp = employeeDao.getEmpByIdDynamic(employee);
             emp.forEach(System.out::println);
         } catch (Exception e) {
@@ -63,5 +64,23 @@ public class dynamic_sql_Test {
         }
     }
 
-
+    //  <!--3.set-与if结合的动态更新-->
+    @Test
+    public void T_updateEmpDynamic() throws IOException {
+        SqlSessionFactory sqlSessionFactory = getSqlSessionFactory();
+        SqlSession sqlSession = null;
+        try {
+            sqlSession = sqlSessionFactory.openSession();
+            EmployeeDao employeeDao = sqlSession.getMapper(EmployeeDao.class);
+            Employee employee = new Employee();
+            employee.setId(1);
+            employee.setLastName("小龙女");
+            employeeDao.updateEmpDynamic(employee);
+        } catch (Exception e) {
+            e.printStackTrace();
+        } finally {
+            sqlSession.commit();
+            sqlSession.close();
+        }
+    }
 }

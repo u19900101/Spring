@@ -22,7 +22,9 @@ public interface EmployeeDao{
 	@MapKey("id")// 指定结果集中为 主键的列名
 	Map<Integer,Employee> getAllEmpReturnMap();
 
-	// 动态sel
+	// 动态sql
 	List<Employee> getEmpByIdDynamic(Employee employee);
 	List<Employee> getEmpByIdsDynamic(@Param("ids") Integer[] ids);
+
+	void updateEmpDynamic(Employee employee);
 }
