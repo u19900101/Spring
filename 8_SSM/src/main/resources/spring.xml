@@ -33,7 +33,6 @@
     <!-- 开启基于注解的事务 -->
     <tx:annotation-driven transaction-manager="dataSourceTransactionManager"/>
 
-
     <!--
 	    整合mybatis
 		目的：1、spring管理所有组件。mapper的实现类。
