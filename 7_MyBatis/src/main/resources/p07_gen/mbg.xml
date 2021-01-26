@@ -2,12 +2,12 @@
 <!DOCTYPE generatorConfiguration
   PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN"
   "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
+
 <generatorConfiguration>
 
 	<!-- 
 		targetRuntime="MyBatis3Simple":生成简单版的CRUD
-		"MyBatis3":豪华版
-	
+		"MyBatis3":豪华版  还没玩转
 	 -->
 	 
   <properties resource="dbconfig.properties"/>
@@ -29,21 +29,23 @@
 	targetPackage="test.model"：目标包名
 	targetProject="\MBGTestProject\src"：目标工程
 	-->
-    <javaModelGenerator targetPackage="main.java.ppppp.generate_bean"
-    		targetProject="D:\\MyJava\\5_Spring\\7_MyBatis\\src">
+      <!--全局引用项目路径名-->
+
+    <javaModelGenerator targetPackage="ppppp.generate_bean"
+    		targetProject="D:/MyJava/5_Spring/7_MyBatis/src/main/java">
       <property name="enableSubPackages" value="true" />
       <property name="trimStrings" value="true" />
     </javaModelGenerator>
 
 	<!-- sqlMapGenerator：sql映射生成策略： -->
-    <sqlMapGenerator targetPackage="main.java.ppppp.generate_dao"
-    	targetProject="D:\\MyJava\\5_Spring\\7_MyBatis\\src">
+    <sqlMapGenerator targetPackage="p07_gen.generateMapper"
+    	targetProject="D:/MyJava/5_Spring/7_MyBatis/src/main/resources">
       <property name="enableSubPackages" value="true" />
     </sqlMapGenerator>
 
 	<!-- javaClientGenerator:指定mapper接口所在的位置 -->
-    <javaClientGenerator type="XMLMAPPER" targetPackage="main.java.ppppp.generate_dao"
-    	targetProject="D:\\MyJava\\5_Spring\\7_MyBatis\\src">
+    <javaClientGenerator type="XMLMAPPER" targetPackage="ppppp.generate_dao"
+    	targetProject="D:/MyJava/5_Spring/7_MyBatis/src/main/java">
       <property name="enableSubPackages" value="true" />
     </javaClientGenerator>
 

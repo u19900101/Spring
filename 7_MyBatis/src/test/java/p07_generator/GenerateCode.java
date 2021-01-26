@@ -12,6 +12,7 @@ import org.mybatis.generator.internal.DefaultShellCallback;
 import ppppp.generate_bean.Employee;
 import ppppp.generate_dao.EmployeeMapper;
 
+
 import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
@@ -44,26 +45,21 @@ public class GenerateCode {
         InputStream inputStream = Resources.getResourceAsStream(resource);
         return new SqlSessionFactoryBuilder().build(inputStream);
     }
-    // 实现步骤：
-    // 1.配置开启缓存
-    // 2.在查询的map.xml上加上<cache></cache>
-    // 3.一个session关闭或者提交后 才能将查询放入二级缓存
+
     @Test
-    public void T_cache_newSession() throws IOException {
+    public void T_geneMethod() throws IOException {
         SqlSessionFactory sqlSessionFactory = getSqlSessionFactory();
         SqlSession sqlSession = null;
         try {
             sqlSession = sqlSessionFactory.openSession();
             EmployeeMapper employeeMapper = sqlSession.getMapper(EmployeeMapper.class);
-            // ppppp.generate_bean.Employee emp = employeeMapper.selectByPrimaryKey(1);
-            // System.out.println(emp);
-            List<Employee> employeeList = employeeMapper.selectAll();
-            employeeList.forEach(System.out::println);
+
+            Employee employeeList = employeeMapper.selectByPrimaryKey(5);
+            System.out.println(employeeList);
         } catch (Exception e) {
             e.printStackTrace();
         } finally {
             sqlSession.close();
         }
     }
-
 }

@@ -28,7 +28,7 @@
     </environments>
     <!-- 将我们写好的sql映射文件（EmployeeMapper.xml）一定要注册到全局配置文件（mybatis-p02_config.xml）中 -->
     <mappers>
-        <mapper resource="p07_gen/generate_mapper/DepartmentMapper.xml" />
-        <mapper resource="p07_gen/generate_mapper/EmployeeMapper.xml" />
+        <mapper resource="p07_gen/generateMapper/DepartmentMapper.xml" />
+        <mapper resource="p07_gen/generateMapper/EmployeeMapper.xml" />
     </mappers>
 </configuration>
