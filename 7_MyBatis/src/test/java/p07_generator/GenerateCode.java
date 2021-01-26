@@ -72,7 +72,8 @@ public class GenerateCode {
         try {
             sqlSession = sqlSessionFactory.openSession();
             EmployeeExample employeeExample = new EmployeeExample();
-            employeeExample.getOrderByClause();
+            // 按照字段升序或者降序
+            employeeExample.setOrderByClause("id DESC");
             // 创建一个查询准则
             EmployeeExample.Criteria criteria = employeeExample.createCriteria();
             criteria.andIdBetween(1, 15);
