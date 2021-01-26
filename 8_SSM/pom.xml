@@ -62,6 +62,12 @@
 
               <!--MyBatis-->
 <!--===============================================================-->
+    <!--使用分页插件-->
+    <dependency>
+      <groupId>com.github.pagehelper</groupId>
+      <artifactId>pagehelper</artifactId>
+      <version>5.2.0</version>
+    </dependency>
     <!--encache 缓存-->
     <dependency>
       <groupId>org.mybatis.caches</groupId>
@@ -369,6 +375,11 @@
       <groupId>org.mybatis</groupId>
       <artifactId>mybatis</artifactId>
       <version>3.5.1</version>
+    </dependency>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>4.13</version>
     </dependency>
 
   </dependencies>
