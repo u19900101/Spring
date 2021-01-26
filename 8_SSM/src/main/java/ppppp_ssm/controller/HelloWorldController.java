@@ -57,10 +57,8 @@ public class HelloWorldController  implements Serializable {
 
         PageHelper.startPage(pageNum, 10);
 
-        EmployeeExample employeeExample = new EmployeeExample();
-        EmployeeExample.Criteria criteria = employeeExample.createCriteria();
         //紧跟着的第一条查询语句才有用  后面的无分页功能
-        List<ppppp_ssm.generate_bean.Employee> emps = employeeMapper.selectByExample(employeeExample);
+        List<ppppp_ssm.generate_bean.Employee> emps = employeeMapper.selectByExample(new EmployeeExample());
         //传入要连续显示多少页
         PageInfo<ppppp_ssm.generate_bean.Employee> info = new PageInfo<>(emps, 5);
         for (ppppp_ssm.generate_bean.Employee employee : emps) {
