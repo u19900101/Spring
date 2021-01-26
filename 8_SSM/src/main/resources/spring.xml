@@ -41,11 +41,11 @@
 			2、spring用来管理事务，spring声明式事务
 	-->
     <!-- 扫描所有的mapper接口的实现，让这些mapper能够自动注入 base-package：指定mapper接口的包名-->
-    <!--<mybatis-spring:scan base-package="ppppp.dao"/>-->
-  <!--  <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
+    <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
         <property name="basePackage" value="ppppp_ssm.dao"></property>
-    </bean>-->
-    <mybatis-spring:scan base-package="ppppp_ssm.dao"/>
+    </bean>
+    <!--可以用 但是employeedao扫不到-->
+    <!--<mybatis-spring:scan base-package="ppppp_ssm.dao"/>-->
 
 
     <!--创建出SqlSessionFactory对象  -->
