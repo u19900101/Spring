@@ -9,5 +9,10 @@
 <h2 style="color: aqua"><a href="getEmpById" >getEmpById</a></h2>
 
 <h2 style="color: aqua"><a href="page" >分页查询</a></h2><br/>
+
+
+<h2 style="color: #ff7b4c"><a href="${propath}page" >项目dedddddd路径:</a></h2><br/>
+
+
 </body>
 </html>
