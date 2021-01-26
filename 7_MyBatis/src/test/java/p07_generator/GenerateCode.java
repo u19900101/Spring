@@ -19,6 +19,7 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.UUID;
 
 /**
  * @author lppppp
@@ -89,4 +90,28 @@ public class GenerateCode {
             sqlSession.close();
         }
     }
+
+    // 批量插入
+    @Test
+    public void T_batch_insert() throws IOException {
+        SqlSessionFactory sqlSessionFactory = getSqlSessionFactory();
+        SqlSession sqlSession = null;
+        try {
+            sqlSession = sqlSessionFactory.openSession();
+            EmployeeMapper mapper = sqlSession.getMapper(EmployeeMapper.class);
+            List<Employee> list = new ArrayList<>();
+            for (int i = 0; i < 1000; i++) {
+                list.add(new Employee(UUID.randomUUID().toString(), UUID.randomUUID().toString()));
+            }
+            int insertBatch = mapper.insertBatch(list);
+            sqlSession.commit();
+            System.out.println(insertBatch);
+
+        } catch (Exception e) {
+            e.printStackTrace();
+        } finally {
+            sqlSession.close();
+        }
+    }
+
 }
