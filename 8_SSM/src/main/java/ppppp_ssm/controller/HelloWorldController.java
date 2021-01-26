@@ -10,8 +10,8 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import ppppp_ssm.dao.EmployeeMapper;
+import ppppp_ssm.generate_bean.Employee;
 import ppppp_ssm.generate_bean.EmployeeExample;
-import ppppp_ssm.pojo.Employee;
 import java.io.Serializable;
 import java.util.List;
 
@@ -27,15 +27,6 @@ public class HelloWorldController  implements Serializable {
     EmployeeService employeeService;
     @Autowired
     private EmployeeMapper employeeMapper;
-
-    @RequestMapping("/getEmps")
-    public String getEmps(Model model){
-        List<Employee> emps = employeeService.getEmps();
-        emps.forEach(System.out::println);
-        model.addAttribute("msg", emps);
-        System.out.println("hello");
-        return "forward:/success.jsp";
-    }
 
     @RequestMapping("/hello")
     public String Hello(){
