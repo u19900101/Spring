@@ -4,14 +4,11 @@
   "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
 
 <generatorConfiguration>
-
-	<!-- 
-		targetRuntime="MyBatis3Simple":生成简单版的CRUD
-		"MyBatis3":豪华版  还没玩转
-	 -->
+	<!-- targetRuntime="MyBatis3Simple":生成简单版的CRUD
+		               "MyBatis3":豪华版  还没玩转-->
 	 
   <properties resource="dbconfig.properties"/>
-  <context id="DB2Tables" targetRuntime="MyBatis3Simple">
+  <context id="DB2Tables" targetRuntime="MyBatis3">
 
   	<!-- jdbcConnection：指定如何连接到目标数据库 -->
     <jdbcConnection driverClass="${classdriver}"
@@ -26,8 +23,8 @@
     </javaTypeResolver>
 
 	<!-- javaModelGenerator：指定javaBean的生成策略 
-	targetPackage="test.model"：目标包名
-	targetProject="\MBGTestProject\src"：目标工程
+                    targetPackage="test.model"：目标包名
+                    targetProject="\MBGTestProject\src"：目标工程
 	-->
       <!--全局引用项目路径名-->
 

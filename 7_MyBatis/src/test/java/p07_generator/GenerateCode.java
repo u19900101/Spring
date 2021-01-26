@@ -10,6 +10,7 @@ import org.mybatis.generator.config.Configuration;
 import org.mybatis.generator.config.xml.ConfigurationParser;
 import org.mybatis.generator.internal.DefaultShellCallback;
 import ppppp.generate_bean.Employee;
+import ppppp.generate_bean.EmployeeExample;
 import ppppp.generate_dao.EmployeeMapper;
 
 
@@ -45,7 +46,7 @@ public class GenerateCode {
         InputStream inputStream = Resources.getResourceAsStream(resource);
         return new SqlSessionFactoryBuilder().build(inputStream);
     }
-
+    // 简单查询
     @Test
     public void T_geneMethod() throws IOException {
         SqlSessionFactory sqlSessionFactory = getSqlSessionFactory();
@@ -56,6 +57,31 @@ public class GenerateCode {
 
             Employee employeeList = employeeMapper.selectByPrimaryKey(5);
             System.out.println(employeeList);
+        } catch (Exception e) {
+            e.printStackTrace();
+        } finally {
+            sqlSession.close();
+        }
+    }
+
+    // 多条件复杂查询
+    @Test
+    public void T_geneMethod_advance() throws IOException {
+        SqlSessionFactory sqlSessionFactory = getSqlSessionFactory();
+        SqlSession sqlSession = null;
+        try {
+            sqlSession = sqlSessionFactory.openSession();
+            EmployeeExample employeeExample = new EmployeeExample();
+            employeeExample.getOrderByClause();
+            // 创建一个查询准则
+            EmployeeExample.Criteria criteria = employeeExample.createCriteria();
+            criteria.andIdBetween(1, 15);
+            criteria.andLastnameLike("%a%");
+
+            EmployeeMapper employeeMapper = sqlSession.getMapper(EmployeeMapper.class);
+            List<Employee> employees = employeeMapper.selectByExample(employeeExample);
+            employees.forEach(System.out::println);
+
         } catch (Exception e) {
             e.printStackTrace();
         } finally {
