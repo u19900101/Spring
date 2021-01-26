@@ -1,7 +1,7 @@
 package p01_HelloWorld;
 
-import dao.EmployeeDao;
-import pojo.Employee;
+import ppppp.dao.EmployeeDao;
+import ppppp.pojo.Employee;
 import org.apache.ibatis.io.Resources;
 import org.apache.ibatis.session.SqlSession;
 import org.apache.ibatis.session.SqlSessionFactory;

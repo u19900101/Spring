@@ -10,7 +10,7 @@
     public Employee getEmpById(Integer id);
      -->
 
-    <select id="getEmpById" resultType="pojo.Employee">
+    <select id="getEmpById" resultType="ppppp.pojo.Employee">
         select id,lastName,email,gender,birth from t_employee where id = #{id}
         </select>
 

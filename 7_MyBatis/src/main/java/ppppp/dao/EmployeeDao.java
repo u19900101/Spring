@@ -1,8 +1,8 @@
-package dao;
+package ppppp.dao;
 
 import org.apache.ibatis.annotations.MapKey;
 import org.apache.ibatis.annotations.Param;
-import pojo.Employee;
+import ppppp.pojo.Employee;
 
 import java.util.List;
 import java.util.Map;

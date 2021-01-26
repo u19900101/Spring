@@ -1,11 +1,10 @@
 package p01_HelloWorld;
 
-import p01_HelloWorld.HelloWorldTest;
-import dao.EmployeeDao;
+import ppppp.dao.EmployeeDao;
 import org.apache.ibatis.session.SqlSession;
 import org.apache.ibatis.session.SqlSessionFactory;
 import org.junit.Test;
-import pojo.Employee;
+import ppppp.pojo.Employee;
 
 import java.io.IOException;
 import java.util.Date;

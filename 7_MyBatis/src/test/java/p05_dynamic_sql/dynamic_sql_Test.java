@@ -1,14 +1,12 @@
 package p05_dynamic_sql;
 
-import dao.DepartmentDao;
-import dao.EmployeeDao;
+import ppppp.dao.EmployeeDao;
 import org.apache.ibatis.io.Resources;
 import org.apache.ibatis.session.SqlSession;
 import org.apache.ibatis.session.SqlSessionFactory;
 import org.apache.ibatis.session.SqlSessionFactoryBuilder;
 import org.junit.Test;
-import pojo.Department;
-import pojo.Employee;
+import ppppp.pojo.Employee;
 
 import java.io.IOException;
 import java.io.InputStream;

@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="dao.EmployeeDao">
+<mapper namespace="ppppp.dao.EmployeeDao">
     <!--Map<Integer,Employee> getAllEmpReturnMap();
      查询的返回值为多条时  返回值类型写为 map中的value的类型
     -->
-    <select id="getAllEmpReturnMap" resultType="pojo.Employee">
+    <select id="getAllEmpReturnMap" resultType="ppppp.pojo.Employee">
         select * from t_employee
     </select>
 
@@ -18,26 +18,26 @@
     </select>
 
     <!--List<Employee> getAllEmp();-->
-    <select id="getAllEmp" resultType="pojo.Employee">
+    <select id="getAllEmp" resultType="ppppp.pojo.Employee">
         select * from t_employee
     </select>
 
 
-    <select id="getEmpById" resultType="pojo.Employee">
+    <select id="getEmpById" resultType="ppppp.pojo.Employee">
         select * from t_employee where id = #{id}
     </select>
 
     <!--Employee getEmpByIdAndName(Integer id,String name);-->
-    <select id="getEmpByIdAndName" resultType="pojo.Employee">
+    <select id="getEmpByIdAndName" resultType="ppppp.pojo.Employee">
         select * from t_employee where id = #{id} and lastName=#{lastName}
     </select>
 
     <!--Employee getEmpByMap(Map map);-->
-    <!--<select id="getEmpByMap" resultType="pojo.Employee">
+    <!--<select id="getEmpByMap" resultType="Employee">
         select * from t_employee where id = #{id} and lastName=#{lastName}
     </select>-->
     <!-- 演示动态的获取表名  此时只能使用$来动态赋值-->
-    <select id="getEmpByMap" resultType="pojo.Employee">
+    <select id="getEmpByMap" resultType="ppppp.pojo.Employee">
         select * from ${tableName} where id = #{id} and lastName=#{lastName}
     </select>
 

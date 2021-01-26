@@ -1,21 +1,18 @@
 package p04_sqlmapper;
 
-import dao.DepartmentDao;
-import dao.EmployeeDao;
+import ppppp.dao.DepartmentDao;
+import ppppp.dao.EmployeeDao;
 import org.apache.ibatis.io.Resources;
 import org.apache.ibatis.session.SqlSession;
 import org.apache.ibatis.session.SqlSessionFactory;
 import org.apache.ibatis.session.SqlSessionFactoryBuilder;
 import org.junit.Test;
-import pojo.Department;
-import pojo.Employee;
+import ppppp.pojo.Department;
+import ppppp.pojo.Employee;
 
 import java.io.IOException;
 import java.io.InputStream;
-import java.util.Date;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 
 /**
  * @author lppppp
